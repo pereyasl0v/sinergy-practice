@@ -30,3 +30,8 @@
 .source-content>a{display:inline-flex;align-items:center;gap:4px;margin-top:9px;color:var(--purple);font-size:11px;font-weight:800;text-decoration:none}
 .source-content>a:hover{text-decoration:underline;text-underline-offset:3px}
 @media(max-width:650px){.section-heading{margin-top:28px}}
+
+/* Discount is part of the tuition selection, not the personal expense budget. */
+.discount-control{margin-top:24px;padding-top:20px;border-top:1px solid var(--border)}
+.discount-control .discount-row{margin-top:0}
+.discount-control .range-scale{margin-bottom:0}

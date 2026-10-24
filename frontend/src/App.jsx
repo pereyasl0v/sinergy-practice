@@ -193,12 +193,14 @@ export default function App() {
             {current.duration_source==='derived' && <p className="note-program">Срок {yearsLabel(months)} определён по соотношению годовой и полной стоимости в приказе. Для конкретной образовательной программы подтвердите длительность при заключении договора.</p>}
             {current.generic && <p className="note-program">В дистанционном приказе приведён общий тариф без перечня специальностей. Выбор этого тарифа <b>не подтверждает</b> применимость цены к определённой специальности.</p>}
             <p className="field-help">Источник: <a href={source?.url} target="_blank" rel="noopener noreferrer">{sourceName} ↗</a>, стр. {current.source_page}. Полная стоимость — из приказа.</p>
-          </section>
-          <section className="sheet">
-            <div className="sheet-head"><div className="number">02</div><div><h3>Личный бюджет</h3><p>Дополнительные расходы отдельно от цены вуза</p></div></div>
+            <div className="discount-control">
             <div className="discount-row"><label htmlFor="discount">Скидка</label><div className="discount-pill">{values.discount}%</div></div>
             <input id="discount" type="range" min="0" max="50" step="1" value={values.discount} onChange={e=>editNumber('discount',e.target.value)}/>
             <div className="range-scale"><span>0%</span><span>25%</span><span>50%</span></div>
+            </div>
+          </section>
+          <section className="sheet">
+            <div className="sheet-head"><div className="number">02</div><div><h3>Личный бюджет</h3><p>Дополнительные расходы отдельно от цены вуза</p></div></div>
             {unit === 'USD' ? <p className="note-program">Для валютных программ личные расходы в рублях не суммируются с ценой обучения в USD: курс обмена приказом не установлен.</p> : <details className="extra-details" open={showExtras} onToggle={e=>setShowExtras(e.currentTarget.open)}>
               <summary><span className="summary-icon">+</span><span><strong>Учесть дополнительные расходы</strong><small>Жильё, питание, транспорт и материалы</small></span><span className="chevron">⌄</span></summary>
               <div className="extra-fields">{[

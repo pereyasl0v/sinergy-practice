@@ -33,3 +33,16 @@ test('The interface shows concise discount controls and clickable PDF sources', 
     assert.match(document.url, /^https:\/\/.+\.pdf$/);
   }
 });
+
+test('Tuition discount is the last control in section 01 and absent from section 02', () => {
+  const src = readFileSync(new URL('../src/App.jsx', import.meta.url), 'utf8');
+  const section01 = src.split('<div className="number">01</div>')[1]?.split('<div className="number">02</div>')[0];
+  const section02 = src.split('<div className="number">02</div>')[1]?.split('</section>')[0];
+  assert.ok(section01, 'Tuition section not found');
+  assert.ok(section02, 'Personal budget section not found');
+  assert.match(section01, /className="discount-control"/);
+  assert.match(section01, /id="discount"/);
+  assert.ok(section01.indexOf('className="discount-control"') > section01.indexOf('className="program-strip"'));
+  assert.doesNotMatch(section02, /id="discount"|className="discount-control"/);
+  assert.equal((src.match(/id="discount"/g) || []).length, 1);
+});
