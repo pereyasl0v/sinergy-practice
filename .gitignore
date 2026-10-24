@@ -1,0 +1,11 @@
+# Frontend generated artifacts and dependencies
+frontend/node_modules/
+frontend/dist/
+
+# Python virtualenvs, caches and local configuration
+backend/.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.env
+.DS_Store

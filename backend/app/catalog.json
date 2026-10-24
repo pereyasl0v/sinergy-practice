@@ -1,0 +1,51 @@
+{
+  "updated": "2026-10-24",
+  "catalog_total": 1421,
+  "levels": [
+    {"id":"college","name":"Колледж","count":88},
+    {"id":"bachelor","name":"Бакалавриат","count":218},
+    {"id":"specialist","name":"Специалитет","count":28},
+    {"id":"master","name":"Магистратура","count":102},
+    {"id":"second","name":"Второе высшее","count":235},
+    {"id":"postgrad","name":"Аспирантура","count":29},
+    {"id":"residency","name":"Ординатура","count":4},
+    {"id":"courses","name":"Курсы","count":717}
+  ],
+  "sources": {
+    "catalog":"https://synergy.ru/abiturientam",
+    "bachelor":"https://sys3.ru/synergyuniversity-ru/upload/official_documents/stoimost/2026-2027/prikaz/prikaz_vo_bak_1kurs.pdf",
+    "specialist":"https://sys3.ru/synergyuniversity-ru/upload/official_documents/stoimost/2026-2027/prikaz/prikaz_vo_spc_1kurs.pdf",
+    "distance":"https://sys3.ru/synergyuniversity-ru/upload/official_documents/stoimost/2026-2027/prikaz/prikaz_stoimost_zao_dist.pdf"
+  },
+  "programs": [
+    {"id":"b-dev","level":"bachelor","area":"Информационные технологии","title":"Разработка программного обеспечения (Full-stack разработка)","study_format":"Очная","months":48,"year_price":380000,"course_price":1520000,"source":"bachelor","page":3},
+    {"id":"b-ai","level":"bachelor","area":"Информационные технологии","title":"Инженер искусственного интеллекта (AI инженер)","study_format":"Очная","months":48,"year_price":380000,"course_price":1520000,"source":"bachelor","page":3},
+    {"id":"b-game","level":"bachelor","area":"Информационные технологии","title":"Разработка компьютерных игр, дополненной и виртуальной реальности","study_format":"Очная","months":48,"year_price":380000,"course_price":1520000,"source":"bachelor","page":3},
+    {"id":"b-1c","level":"bachelor","area":"Информационные технологии","title":"Прикладная информатика в экономике (совместная программа с 1С)","study_format":"Очная","months":48,"year_price":380000,"course_price":1520000,"source":"bachelor","page":3},
+    {"id":"b-cyber","level":"bachelor","area":"Информационные технологии","title":"Безопасность компьютерных систем в сфере профессиональной деятельности","study_format":"Очная","months":48,"year_price":380000,"course_price":1520000,"source":"bachelor","page":3},
+    {"id":"b-itmanage","level":"bachelor","area":"Информационные технологии","title":"IT-менеджмент в бизнесе","study_format":"Очная","months":48,"year_price":380000,"course_price":1520000,"source":"bachelor","page":3},
+    {"id":"b-general","level":"bachelor","area":"Бизнес и управление","title":"Общий менеджмент","study_format":"Очная","months":48,"year_price":340000,"course_price":1360000,"source":"bachelor","page":3},
+    {"id":"b-logistics","level":"bachelor","area":"Бизнес и управление","title":"Логистика","study_format":"Очная","months":48,"year_price":340000,"course_price":1360000,"source":"bachelor","page":3},
+    {"id":"b-hr","level":"bachelor","area":"Бизнес и управление","title":"Кадровый менеджмент","study_format":"Очная","months":48,"year_price":340000,"course_price":1360000,"source":"bachelor","page":3},
+    {"id":"b-economics","level":"bachelor","area":"Экономика и право","title":"Экономика — общий профиль","study_format":"Очная","months":48,"year_price":340000,"course_price":1360000,"source":"bachelor","page":3},
+    {"id":"b-law","level":"bachelor","area":"Экономика и право","title":"Юриспруденция — гражданско-правовой профиль","study_format":"Очная","months":48,"year_price":340000,"course_price":1360000,"source":"bachelor","page":3},
+    {"id":"b-psych","level":"bachelor","area":"Психология и педагогика","title":"Практическая психология","study_format":"Очная","months":48,"year_price":340000,"course_price":1360000,"source":"bachelor","page":4},
+    {"id":"b-teacher","level":"bachelor","area":"Психология и педагогика","title":"Психология и педагогика начального образования","study_format":"Очная","months":48,"year_price":310000,"course_price":1240000,"source":"bachelor","page":4},
+    {"id":"b-design","level":"bachelor","area":"Дизайн и медиа","title":"Графический дизайн и виртуальная дополненная реальность","study_format":"Очная","months":48,"year_price":380000,"course_price":1520000,"source":"bachelor","page":4},
+    {"id":"b-game-design","level":"bachelor","area":"Дизайн и медиа","title":"Гейм-дизайн","study_format":"Очная","months":48,"year_price":380000,"course_price":1520000,"source":"bachelor","page":4},
+    {"id":"b-internet","level":"bachelor","area":"Дизайн и медиа","title":"Интернет-маркетинг","study_format":"Очная","months":48,"year_price":340000,"course_price":1360000,"source":"bachelor","page":4},
+    {"id":"b-animation","level":"bachelor","area":"Дизайн и медиа","title":"Нейроанимация и цифровое кино","study_format":"Очная","months":48,"year_price":500000,"course_price":2000000,"source":"bachelor","page":4},
+    {"id":"b-lang","level":"bachelor","area":"Языки","title":"Теория и практика перевода","study_format":"Очная","months":48,"year_price":310000,"course_price":1240000,"source":"bachelor","page":4},
+    {"id":"s-economy","level":"specialist","area":"Экономика и право","title":"Экономическая безопасность — экономист","study_format":"Очная","months":60,"year_price":340000,"course_price":1700000,"source":"specialist","page":3},
+    {"id":"s-customs","level":"specialist","area":"Экономика и право","title":"Таможенное дело","study_format":"Очная","months":60,"year_price":340000,"course_price":1700000,"source":"specialist","page":3},
+    {"id":"s-clinical","level":"specialist","area":"Психология и педагогика","title":"Клиническая психология","study_format":"Очная","months":66,"year_price":340000,"course_price":1870000,"source":"specialist","page":3},
+    {"id":"s-camera","level":"specialist","area":"Дизайн и медиа","title":"Кинооператорство — кинооператор","study_format":"Очная","months":60,"year_price":430000,"course_price":2150000,"source":"specialist","page":3},
+    {"id":"s-producer","level":"specialist","area":"Дизайн и медиа","title":"Продюсер кино и телевидения","study_format":"Очная","months":60,"year_price":430000,"course_price":2150000,"source":"specialist","page":3},
+    {"id":"s-doctor","level":"specialist","area":"Медицина","title":"Лечебное дело — врач-лечебник","study_format":"Очная","months":72,"year_price":790000,"course_price":4740000,"source":"specialist","page":3},
+    {"id":"s-dental","level":"specialist","area":"Медицина","title":"Стоматология — врач-стоматолог","study_format":"Очная","months":60,"year_price":840000,"course_price":4200000,"source":"specialist","page":3},
+    {"id":"d-bak-base","level":"bachelor","area":"Дистанционное обучение","title":"Базовый тариф очно-заочного обучения с ДОТ (не отдельная программа)","study_format":"Очно-заочная с ДОТ","months":54,"year_price":100000,"course_price":450000,"source":"distance","page":4,"generic":true},
+    {"id":"d-bak-tutor","level":"bachelor","area":"Дистанционное обучение","title":"Очно-заочное обучение с ДОТ и поддержкой преподавателя (общий тариф)","study_format":"Очно-заочная с ДОТ","months":54,"year_price":120000,"course_price":540000,"source":"distance","page":4,"generic":true},
+    {"id":"d-college","level":"college","area":"Дистанционное обучение","title":"Общий тариф очно-заочного обучения с ДОТ (не отдельная программа)","study_format":"Очно-заочная с ДОТ","months":48,"year_price":100000,"course_price":400000,"source":"distance","page":3,"generic":true},
+    {"id":"d-master","level":"master","area":"Дистанционное обучение","title":"Общий тариф очно-заочного обучения с ДОТ (не отдельная программа)","study_format":"Очно-заочная с ДОТ","months":30,"year_price":100000,"course_price":250000,"source":"distance","page":5,"generic":true}
+  ]
+}

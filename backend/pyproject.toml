@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "sinergy-education-cost-backend"
+version = "1.0.0"
+description = "FastAPI backend for an education cost calculator"
+authors = ["Project team"]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.115.0"
+uvicorn = {extras = ["standard"], version = "^0.30.0"}
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.0"
+httpx = "^0.27.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0"]
+build-backend = "poetry.core.masonry.api"
