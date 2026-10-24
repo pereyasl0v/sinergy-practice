@@ -152,7 +152,7 @@ export default function App() {
   return <>
     <header className="topbar"><div className="wrap topbar-inner">
       <a className="wordmark" href="/" aria-label="Калькулятор стоимости обучения"><span className="brand-icon">₽</span><span>Стоимость<span className="wordmark-muted">.обучения</span></span></a>
-      <div className="topbar-right"><a className="top-link" href="#sources">Документы и цены ↗</a></div>
+      <div className="topbar-right"><a className="top-link" href="#sources">Официальные документы ↗</a></div>
     </div></header>
     <main className="wrap">
       <section className="hero">
@@ -167,10 +167,6 @@ export default function App() {
           <div className="art-card mini-card"><span className="mini-icon">✓</span><span>Данные из официальных<br/>таблиц стоимости</span></div>
         </div>
       </section>
-      <div className="catalog-strip">
-        <div className="catalog-main"><small>Проверенных тарифных позиций</small><div><strong>{programs.length}</strong> <span>из трёх приказов</span></div></div>
-        {['bachelor','specialist','college','master'].map(id => { const item = levelItems.find(x => x.id === id); return <div className="catalog-stat" key={id}><strong>{item?.count ?? 0}</strong><span>{item?.name?.toLowerCase()}</span></div>; })}
-      </div>
       <div className="section-heading"><div><div className="section-kicker">ПОДБОР ПРОГРАММЫ</div><h2>Сначала выберите направление</h2></div><span className="small-muted">1 — программа · 2 — бюджет</span></div>
       <div className="workspace">
         <div className="form-column">
@@ -193,14 +189,13 @@ export default function App() {
             </div></div>
             {current.duration_source==='derived' && <p className="note-program">Срок {yearsLabel(months)} определён по соотношению годовой и полной стоимости в приказе. Для конкретной образовательной программы подтвердите длительность при заключении договора.</p>}
             {current.generic && <p className="note-program">В дистанционном приказе приведён общий тариф без перечня специальностей. Выбор этого тарифа <b>не подтверждает</b> применимость цены к определённой специальности.</p>}
-            <p className="field-help">Источник: {sourceName}, приложение, стр. {current.source_page}. Цена за весь курс указана в таблице, не получена умножением годовой суммы.</p>
+            <p className="field-help">Источник: <a href={source?.url} target="_blank" rel="noopener noreferrer">{sourceName} ↗</a>, стр. {current.source_page}. Полная стоимость — из приказа.</p>
           </section>
           <section className="sheet">
             <div className="sheet-head"><div className="number">02</div><div><h3>Личный бюджет</h3><p>Дополнительные расходы отдельно от цены вуза</p></div></div>
-            <div className="discount-row"><div><label htmlFor="discount">Гипотетическая скидка</label><p>Не входит в цены приказа, используйте только для планирования</p></div><div className="discount-pill">{values.discount}%</div></div>
+            <div className="discount-row"><label htmlFor="discount">Скидка</label><div className="discount-pill">{values.discount}%</div></div>
             <input id="discount" type="range" min="0" max="50" step="1" value={values.discount} onChange={e=>editNumber('discount',e.target.value)}/>
             <div className="range-scale"><span>0%</span><span>25%</span><span>50%</span></div>
-            <p className="inline-caution">Официальная полная цена выше показана <b>без этого предположения</b>. Скидка влияет только на расчёт личного бюджета.</p>
             {unit === 'USD' ? <p className="note-program">Для валютных программ личные расходы в рублях не суммируются с ценой обучения в USD: курс обмена приказом не установлен.</p> : <details className="extra-details" open={showExtras} onToggle={e=>setShowExtras(e.currentTarget.open)}>
               <summary><span className="summary-icon">+</span><span><strong>Учесть дополнительные расходы</strong><small>Жильё, питание, транспорт и материалы</small></span><span className="chevron">⌄</span></summary>
               <div className="extra-fields">{[
@@ -219,9 +214,9 @@ export default function App() {
             <div className="main-total-note">{yearsLabel(months)} · {current.title}</div>
             <div className="result-divider"/>
             <div className="result-rows"><div><span>Первый год (цена 2026)</span><strong>{currency(yearToShow,unit)}</strong></div><div><span>Вариант</span><strong>{employment && canEmployment ? 'С трудоустройством' : 'Стандартный'}</strong></div><div><span>Форма обучения</span><strong>{form}</strong></div></div>
-            <div className="budget-month"><div className="budget-month-label">Общий личный бюджет с учётом ваших настроек</div><strong>{currency(budgetTotal,unit)}</strong><div className="budget-month-note">Учёба + личные расходы − гипотетическая скидка</div></div>
+            <div className="budget-month"><div className="budget-month-label">Общий личный бюджет с учётом ваших настроек</div><strong>{currency(budgetTotal,unit)}</strong><div className="budget-month-note">Учёба + личные расходы − скидка</div></div>
             <div className="result-rows budget-extra-rows">
-              <div><span>Гипотетическая скидка</span><strong className="save">− {currency(quote?.discount_savings,unit)}</strong></div>
+              <div><span>Скидка</span><strong className="save">− {currency(quote?.discount_savings,unit)}</strong></div>
               <div><span>Дополнительные расходы</span><strong>{currency(quote ? quote.living_total + quote.materials : null,unit)}</strong></div>
               <div><span>Средний бюджет в месяц</span><strong>{currency(quote?.average_month,unit)}</strong></div>
             </div>
@@ -234,9 +229,16 @@ export default function App() {
         </aside>
       </div>
       <section id="sources" className="sources-section">
-        <div><div className="section-kicker">ПРОВЕРЯЕМЫЕ ДАННЫЕ</div><h2>Три приказа университета</h2><p>Каталог составлен по таблицам приложенных документов. Для каждой строки записаны название программы, форма, период, цены и номер страницы. Дистанционные общие тарифы не выдаются за цены конкретных специальностей.</p></div>
+        <div><h2>Официальные документы</h2></div>
         <div className="sources-card">{Object.entries(catalog.source_documents).map(([key,source])=><div className="source-item" key={key}>
-          <span className="source-icon">№</span><div><strong>{key==='bachelor'?'Бакалавриат':key==='specialist'?'Специалитет':'Обучение с дистанционными технологиями'}</strong><small>{source.order} · {source.filename} · стр. {source.pages.join(', ')}</small></div>
+          <span className="source-icon">№</span>
+          <div className="source-content">
+            <strong>{key==='bachelor'?'Бакалавриат':key==='specialist'?'Специалитет':'Обучение с дистанционными технологиями'}</strong>
+            <small>{source.order} · стр. {source.pages.join(', ')}</small>
+            <a href={source.url} target="_blank" rel="noopener noreferrer" aria-label={`Открыть приказ: ${source.order}`}>
+              Открыть приказ (PDF) ↗
+            </a>
+          </div>
         </div>)}</div>
       </section>
       <footer className="footer"><span>Калькулятор стоимости обучения · цены 2026/2027</span><span>Разработано © Ю. В. Переяслов</span></footer>

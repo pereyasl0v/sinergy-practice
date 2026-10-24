@@ -18,3 +18,15 @@
 .main-total-note{white-space:normal;line-height:1.45}
 .source-item div{min-width:0}.source-item small{overflow-wrap:anywhere}
 @media(max-width:650px){.chart-line{grid-template-columns:70px minmax(0,1fr) 86px}.result-body{overflow-wrap:anywhere}.main-total{font-size:29px}.program-facts{grid-template-columns:1fr 1fr 1fr}}
+
+/* Simplified price calculator interface. */
+.section-heading{margin-top:31px}
+.discount-row{margin-top:0}
+.discount-row label{margin-bottom:0}
+.range-scale{margin-bottom:20px}
+.field-help a{color:var(--purple);font-weight:750;text-decoration:underline;text-underline-offset:2px}
+.sources-section{gap:50px}
+.sources-section h2{margin-top:0}
+.source-content>a{display:inline-flex;align-items:center;gap:4px;margin-top:9px;color:var(--purple);font-size:11px;font-weight:800;text-decoration:none}
+.source-content>a:hover{text-decoration:underline;text-underline-offset:3px}
+@media(max-width:650px){.section-heading{margin-top:28px}}
