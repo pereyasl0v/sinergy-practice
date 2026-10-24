@@ -1,51 +1,4363 @@
 {
-  "updated": "2026-10-24",
-  "catalog_total": 1421,
+  "academic_year": "2026/2027",
+  "catalog_description": "Только тарифные позиции из трёх приложенных приказов, а не полный каталог специальностей университета.",
   "levels": [
-    {"id":"college","name":"Колледж","count":88},
-    {"id":"bachelor","name":"Бакалавриат","count":218},
-    {"id":"specialist","name":"Специалитет","count":28},
-    {"id":"master","name":"Магистратура","count":102},
-    {"id":"second","name":"Второе высшее","count":235},
-    {"id":"postgrad","name":"Аспирантура","count":29},
-    {"id":"residency","name":"Ординатура","count":4},
-    {"id":"courses","name":"Курсы","count":717}
+    {
+      "id": "bachelor",
+      "name": "Бакалавриат",
+      "count": 143
+    },
+    {
+      "id": "specialist",
+      "name": "Специалитет",
+      "count": 24
+    },
+    {
+      "id": "master",
+      "name": "Магистратура",
+      "count": 4
+    },
+    {
+      "id": "college",
+      "name": "Среднее профессиональное образование",
+      "count": 5
+    }
   ],
-  "sources": {
-    "catalog":"https://synergy.ru/abiturientam",
-    "bachelor":"https://sys3.ru/synergyuniversity-ru/upload/official_documents/stoimost/2026-2027/prikaz/prikaz_vo_bak_1kurs.pdf",
-    "specialist":"https://sys3.ru/synergyuniversity-ru/upload/official_documents/stoimost/2026-2027/prikaz/prikaz_vo_spc_1kurs.pdf",
-    "distance":"https://sys3.ru/synergyuniversity-ru/upload/official_documents/stoimost/2026-2027/prikaz/prikaz_stoimost_zao_dist.pdf"
+  "source_documents": {
+    "bachelor": {
+      "filename": "prikaz_vo_bak_1kurs.pdf",
+      "order": "№ 173/3000255 от 04.09.2026",
+      "pages": [
+        3,
+        4,
+        5
+      ]
+    },
+    "specialist": {
+      "filename": "prikaz_vo_spc_1kurs.pdf",
+      "order": "№ 173/3000224 от 30.07.2026",
+      "pages": [
+        3
+      ]
+    },
+    "distance": {
+      "filename": "prikaz_stoimost_zao_dist.pdf",
+      "order": "№ 173/2001300 от 20.01.2026",
+      "pages": [
+        3,
+        4,
+        5
+      ]
+    }
   },
   "programs": [
-    {"id":"b-dev","level":"bachelor","area":"Информационные технологии","title":"Разработка программного обеспечения (Full-stack разработка)","study_format":"Очная","months":48,"year_price":380000,"course_price":1520000,"source":"bachelor","page":3},
-    {"id":"b-ai","level":"bachelor","area":"Информационные технологии","title":"Инженер искусственного интеллекта (AI инженер)","study_format":"Очная","months":48,"year_price":380000,"course_price":1520000,"source":"bachelor","page":3},
-    {"id":"b-game","level":"bachelor","area":"Информационные технологии","title":"Разработка компьютерных игр, дополненной и виртуальной реальности","study_format":"Очная","months":48,"year_price":380000,"course_price":1520000,"source":"bachelor","page":3},
-    {"id":"b-1c","level":"bachelor","area":"Информационные технологии","title":"Прикладная информатика в экономике (совместная программа с 1С)","study_format":"Очная","months":48,"year_price":380000,"course_price":1520000,"source":"bachelor","page":3},
-    {"id":"b-cyber","level":"bachelor","area":"Информационные технологии","title":"Безопасность компьютерных систем в сфере профессиональной деятельности","study_format":"Очная","months":48,"year_price":380000,"course_price":1520000,"source":"bachelor","page":3},
-    {"id":"b-itmanage","level":"bachelor","area":"Информационные технологии","title":"IT-менеджмент в бизнесе","study_format":"Очная","months":48,"year_price":380000,"course_price":1520000,"source":"bachelor","page":3},
-    {"id":"b-general","level":"bachelor","area":"Бизнес и управление","title":"Общий менеджмент","study_format":"Очная","months":48,"year_price":340000,"course_price":1360000,"source":"bachelor","page":3},
-    {"id":"b-logistics","level":"bachelor","area":"Бизнес и управление","title":"Логистика","study_format":"Очная","months":48,"year_price":340000,"course_price":1360000,"source":"bachelor","page":3},
-    {"id":"b-hr","level":"bachelor","area":"Бизнес и управление","title":"Кадровый менеджмент","study_format":"Очная","months":48,"year_price":340000,"course_price":1360000,"source":"bachelor","page":3},
-    {"id":"b-economics","level":"bachelor","area":"Экономика и право","title":"Экономика — общий профиль","study_format":"Очная","months":48,"year_price":340000,"course_price":1360000,"source":"bachelor","page":3},
-    {"id":"b-law","level":"bachelor","area":"Экономика и право","title":"Юриспруденция — гражданско-правовой профиль","study_format":"Очная","months":48,"year_price":340000,"course_price":1360000,"source":"bachelor","page":3},
-    {"id":"b-psych","level":"bachelor","area":"Психология и педагогика","title":"Практическая психология","study_format":"Очная","months":48,"year_price":340000,"course_price":1360000,"source":"bachelor","page":4},
-    {"id":"b-teacher","level":"bachelor","area":"Психология и педагогика","title":"Психология и педагогика начального образования","study_format":"Очная","months":48,"year_price":310000,"course_price":1240000,"source":"bachelor","page":4},
-    {"id":"b-design","level":"bachelor","area":"Дизайн и медиа","title":"Графический дизайн и виртуальная дополненная реальность","study_format":"Очная","months":48,"year_price":380000,"course_price":1520000,"source":"bachelor","page":4},
-    {"id":"b-game-design","level":"bachelor","area":"Дизайн и медиа","title":"Гейм-дизайн","study_format":"Очная","months":48,"year_price":380000,"course_price":1520000,"source":"bachelor","page":4},
-    {"id":"b-internet","level":"bachelor","area":"Дизайн и медиа","title":"Интернет-маркетинг","study_format":"Очная","months":48,"year_price":340000,"course_price":1360000,"source":"bachelor","page":4},
-    {"id":"b-animation","level":"bachelor","area":"Дизайн и медиа","title":"Нейроанимация и цифровое кино","study_format":"Очная","months":48,"year_price":500000,"course_price":2000000,"source":"bachelor","page":4},
-    {"id":"b-lang","level":"bachelor","area":"Языки","title":"Теория и практика перевода","study_format":"Очная","months":48,"year_price":310000,"course_price":1240000,"source":"bachelor","page":4},
-    {"id":"s-economy","level":"specialist","area":"Экономика и право","title":"Экономическая безопасность — экономист","study_format":"Очная","months":60,"year_price":340000,"course_price":1700000,"source":"specialist","page":3},
-    {"id":"s-customs","level":"specialist","area":"Экономика и право","title":"Таможенное дело","study_format":"Очная","months":60,"year_price":340000,"course_price":1700000,"source":"specialist","page":3},
-    {"id":"s-clinical","level":"specialist","area":"Психология и педагогика","title":"Клиническая психология","study_format":"Очная","months":66,"year_price":340000,"course_price":1870000,"source":"specialist","page":3},
-    {"id":"s-camera","level":"specialist","area":"Дизайн и медиа","title":"Кинооператорство — кинооператор","study_format":"Очная","months":60,"year_price":430000,"course_price":2150000,"source":"specialist","page":3},
-    {"id":"s-producer","level":"specialist","area":"Дизайн и медиа","title":"Продюсер кино и телевидения","study_format":"Очная","months":60,"year_price":430000,"course_price":2150000,"source":"specialist","page":3},
-    {"id":"s-doctor","level":"specialist","area":"Медицина","title":"Лечебное дело — врач-лечебник","study_format":"Очная","months":72,"year_price":790000,"course_price":4740000,"source":"specialist","page":3},
-    {"id":"s-dental","level":"specialist","area":"Медицина","title":"Стоматология — врач-стоматолог","study_format":"Очная","months":60,"year_price":840000,"course_price":4200000,"source":"specialist","page":3},
-    {"id":"d-bak-base","level":"bachelor","area":"Дистанционное обучение","title":"Базовый тариф очно-заочного обучения с ДОТ (не отдельная программа)","study_format":"Очно-заочная с ДОТ","months":54,"year_price":100000,"course_price":450000,"source":"distance","page":4,"generic":true},
-    {"id":"d-bak-tutor","level":"bachelor","area":"Дистанционное обучение","title":"Очно-заочное обучение с ДОТ и поддержкой преподавателя (общий тариф)","study_format":"Очно-заочная с ДОТ","months":54,"year_price":120000,"course_price":540000,"source":"distance","page":4,"generic":true},
-    {"id":"d-college","level":"college","area":"Дистанционное обучение","title":"Общий тариф очно-заочного обучения с ДОТ (не отдельная программа)","study_format":"Очно-заочная с ДОТ","months":48,"year_price":100000,"course_price":400000,"source":"distance","page":3,"generic":true},
-    {"id":"d-master","level":"master","area":"Дистанционное обучение","title":"Общий тариф очно-заочного обучения с ДОТ (не отдельная программа)","study_format":"Очно-заочная с ДОТ","months":30,"year_price":100000,"course_price":250000,"source":"distance","page":5,"generic":true}
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Менеджмент",
+      "title": "Общий менеджмент",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 350000,
+          "course_price": 1400000,
+          "employment_year_price": 390000,
+          "employment_course_price": 1560000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 3,
+      "id": "b-ba-001",
+      "name": "Общий менеджмент",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Менеджмент",
+      "title": "Менеджмент в девелопменте",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 350000,
+          "course_price": 1400000,
+          "employment_year_price": 390000,
+          "employment_course_price": 1560000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 3,
+      "id": "b-ba-002",
+      "name": "Менеджмент в девелопменте",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Менеджмент",
+      "title": "Логистика",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 350000,
+          "course_price": 1400000,
+          "employment_year_price": 390000,
+          "employment_course_price": 1560000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 3,
+      "id": "b-ba-003",
+      "name": "Логистика",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Менеджмент",
+      "title": "Складская логистика",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 350000,
+          "course_price": 1400000,
+          "employment_year_price": 390000,
+          "employment_course_price": 1560000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 3,
+      "id": "b-ba-004",
+      "name": "Складская логистика",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Менеджмент",
+      "title": "Международная логистика и внешнеторговая деятельность",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 350000,
+          "course_price": 1400000,
+          "employment_year_price": 390000,
+          "employment_course_price": 1560000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 3,
+      "id": "b-ba-005",
+      "name": "Международная логистика и внешнеторговая деятельность",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Менеджмент",
+      "title": "Предпринимательство",
+      "prices": [
+        {
+          "months": 60,
+          "year_price": 400000,
+          "course_price": 2000000,
+          "employment_year_price": null,
+          "employment_course_price": null
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 3,
+      "id": "b-ba-006",
+      "name": "Предпринимательство",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Менеджмент",
+      "title": "Спортивный менеджмент",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 350000,
+          "course_price": 1400000,
+          "employment_year_price": 390000,
+          "employment_course_price": 1560000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 3,
+      "id": "b-ba-007",
+      "name": "Спортивный менеджмент",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Технология транспортных процессов",
+      "title": "Транспортная логистика",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 350000,
+          "course_price": 1400000,
+          "employment_year_price": 390000,
+          "employment_course_price": 1560000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 3,
+      "id": "b-ba-008",
+      "name": "Транспортная логистика",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Управление персоналом",
+      "title": "HR-менеджмент",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 350000,
+          "course_price": 1400000,
+          "employment_year_price": 390000,
+          "employment_course_price": 1560000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 3,
+      "id": "b-ba-009",
+      "name": "HR-менеджмент",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Спорт",
+      "title": "Тренерская деятельность в спорте",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 350000,
+          "course_price": 1400000,
+          "employment_year_price": 390000,
+          "employment_course_price": 1560000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 3,
+      "id": "b-ba-010",
+      "name": "Тренерская деятельность в спорте",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Туризм",
+      "title": "Общий профиль",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 350000,
+          "course_price": 1400000,
+          "employment_year_price": 390000,
+          "employment_course_price": 1560000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 3,
+      "id": "b-ba-011",
+      "name": "Общий профиль",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Туризм",
+      "title": "Международный менеджмент в гостиничном и ресторанном бизнесе (программа с Китаем - Hainan University)",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 620000,
+          "course_price": 2480000,
+          "employment_year_price": 660000,
+          "employment_course_price": 2640000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 3,
+      "id": "b-ba-012",
+      "name": "Международный менеджмент в гостиничном и ресторанном бизнесе (программа с Китаем - Hainan University)",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Гостинчное дело",
+      "title": "Высшая школа отельеров, рестораторов и туроператоров",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 350000,
+          "course_price": 1400000,
+          "employment_year_price": 390000,
+          "employment_course_price": 1560000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 3,
+      "id": "b-ba-013",
+      "name": "Высшая школа отельеров, рестораторов и туроператоров",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Технология продукции и организация общественного питания",
+      "title": "Общий профиль",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 360000,
+          "course_price": 1440000,
+          "employment_year_price": 400000,
+          "employment_course_price": 1600000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 3,
+      "id": "b-ba-014",
+      "name": "Общий профиль",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Государственное и муниципальное управление",
+      "title": "Государственная и муниципальная служба",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 350000,
+          "course_price": 1400000,
+          "employment_year_price": 390000,
+          "employment_course_price": 1560000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 3,
+      "id": "b-ba-015",
+      "name": "Государственная и муниципальная служба",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Торговое дело",
+      "title": "Международная конгрессно-выставочная деятельность",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 350000,
+          "course_price": 1400000,
+          "employment_year_price": 390000,
+          "employment_course_price": 1560000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 3,
+      "id": "b-ba-016",
+      "name": "Международная конгрессно-выставочная деятельность",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Международные отношения",
+      "title": "Международные отношения",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 350000,
+          "course_price": 1400000,
+          "employment_year_price": 390000,
+          "employment_course_price": 1560000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 3,
+      "id": "b-ba-017",
+      "name": "Международные отношения",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "ИСиТ",
+      "title": "Разработка, сопровождение и обеспечение безопасности информационных системъ",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 390000,
+          "course_price": 1560000,
+          "employment_year_price": 430000,
+          "employment_course_price": 1720000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 3,
+      "id": "b-ba-018",
+      "name": "Разработка, сопровождение и обеспечение безопасности информационных системъ",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "ИСиТ",
+      "title": "Общий профиль",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 390000,
+          "course_price": 1560000,
+          "employment_year_price": 430000,
+          "employment_course_price": 1720000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 3,
+      "id": "b-ba-019",
+      "name": "Общий профиль",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "ИСиТ",
+      "title": "Разработка компьютерных игр, дополненной и виртуальной реальности",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 390000,
+          "course_price": 1560000,
+          "employment_year_price": 430000,
+          "employment_course_price": 1720000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 3,
+      "id": "b-ba-020",
+      "name": "Разработка компьютерных игр, дополненной и виртуальной реальности",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "МОиАИС",
+      "title": "Разработка программного обеспечения (Full-stack разработка)",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 390000,
+          "course_price": 1560000,
+          "employment_year_price": 430000,
+          "employment_course_price": 1720000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 3,
+      "id": "b-ba-021",
+      "name": "Разработка программного обеспечения (Full-stack разработка)",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Информационная безопасность",
+      "title": "Безопасность компьютерных систем в сфере профессиональной деятельности",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 390000,
+          "course_price": 1560000,
+          "employment_year_price": 430000,
+          "employment_course_price": 1720000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 3,
+      "id": "b-ba-022",
+      "name": "Безопасность компьютерных систем в сфере профессиональной деятельности",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Прикладная информатика",
+      "title": "Прикладная информатика в экономике (совместная программа с 1С)",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 390000,
+          "course_price": 1560000,
+          "employment_year_price": 430000,
+          "employment_course_price": 1720000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 3,
+      "id": "b-ba-023",
+      "name": "Прикладная информатика в экономике (совместная программа с 1С)",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Прикладная информатика",
+      "title": "Инженер искусственного интеллекта (AI инженер)",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 390000,
+          "course_price": 1560000,
+          "employment_year_price": 430000,
+          "employment_course_price": 1720000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 3,
+      "id": "b-ba-024",
+      "name": "Инженер искусственного интеллекта (AI инженер)",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Прикладная информатика",
+      "title": "Разработка игровых вселенных",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 390000,
+          "course_price": 1560000,
+          "employment_year_price": 430000,
+          "employment_course_price": 1720000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 3,
+      "id": "b-ba-025",
+      "name": "Разработка игровых вселенных",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Бизнес-информатика",
+      "title": "IT-менеджмент в бизнесе",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 390000,
+          "course_price": 1560000,
+          "employment_year_price": 430000,
+          "employment_course_price": 1720000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 3,
+      "id": "b-ba-026",
+      "name": "IT-менеджмент в бизнесе",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Экономика",
+      "title": "Общий профиль",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 350000,
+          "course_price": 1400000,
+          "employment_year_price": 390000,
+          "employment_course_price": 1560000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 3,
+      "id": "b-ba-027",
+      "name": "Общий профиль",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Экономика",
+      "title": "Корпоративные финансы",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 350000,
+          "course_price": 1400000,
+          "employment_year_price": 390000,
+          "employment_course_price": 1560000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 3,
+      "id": "b-ba-028",
+      "name": "Корпоративные финансы",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Экономика",
+      "title": "Современный банковский бизнес",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 350000,
+          "course_price": 1400000,
+          "employment_year_price": 390000,
+          "employment_course_price": 1560000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 3,
+      "id": "b-ba-029",
+      "name": "Современный банковский бизнес",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Экономика",
+      "title": "Мировая экономика (2 иностранных языка)",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 350000,
+          "course_price": 1400000,
+          "employment_year_price": 390000,
+          "employment_course_price": 1560000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 3,
+      "id": "b-ba-030",
+      "name": "Мировая экономика (2 иностранных языка)",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Экономика",
+      "title": "Бизнес-аналитика и прикладной анализ данных",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 350000,
+          "course_price": 1400000,
+          "employment_year_price": 390000,
+          "employment_course_price": 1560000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 3,
+      "id": "b-ba-031",
+      "name": "Бизнес-аналитика и прикладной анализ данных",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Экономика",
+      "title": "Экономика и управление на предприятиях энергетики (совместная образовательная программа с Ивановским государственным энергетическим университетом)",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 350000,
+          "course_price": 1400000,
+          "employment_year_price": null,
+          "employment_course_price": null
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 3,
+      "id": "b-ba-032",
+      "name": "Экономика и управление на предприятиях энергетики (совместная образовательная программа с Ивановским государственным энергетическим университетом)",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Экономика",
+      "title": "Международная торговля (программа двойных дипломов с Университетом Шантоу, Китай)",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 600000,
+          "course_price": 2400000,
+          "employment_year_price": null,
+          "employment_course_price": null
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 3,
+      "id": "b-ba-033",
+      "name": "Международная торговля (программа двойных дипломов с Университетом Шантоу, Китай)",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Юриспруденция",
+      "title": "Гражданско-правовой профиль",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 350000,
+          "course_price": 1400000,
+          "employment_year_price": 390000,
+          "employment_course_price": 1560000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 3,
+      "id": "b-ba-034",
+      "name": "Гражданско-правовой профиль",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Юриспруденция",
+      "title": "Общий профиль",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 350000,
+          "course_price": 1400000,
+          "employment_year_price": 390000,
+          "employment_course_price": 1560000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 3,
+      "id": "b-ba-035",
+      "name": "Общий профиль",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Юриспруденция",
+      "title": "Уголовно-правовой профиль",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 350000,
+          "course_price": 1400000,
+          "employment_year_price": 390000,
+          "employment_course_price": 1560000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 3,
+      "id": "b-ba-036",
+      "name": "Уголовно-правовой профиль",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Дизайн",
+      "title": "Графический дизайн и виртуальная дополненная реальность",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 390000,
+          "course_price": 1560000,
+          "employment_year_price": 430000,
+          "employment_course_price": 1720000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 4,
+      "id": "b-ba-037",
+      "name": "Графический дизайн и виртуальная дополненная реальность",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Дизайн",
+      "title": "Общий профиль",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 390000,
+          "course_price": 1560000,
+          "employment_year_price": 430000,
+          "employment_course_price": 1720000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 4,
+      "id": "b-ba-038",
+      "name": "Общий профиль",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Дизайн",
+      "title": "Дизайн среды и интерьера",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 390000,
+          "course_price": 1560000,
+          "employment_year_price": 430000,
+          "employment_course_price": 1720000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 4,
+      "id": "b-ba-039",
+      "name": "Дизайн среды и интерьера",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Дизайн",
+      "title": "Промышленный дизайн",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 390000,
+          "course_price": 1560000,
+          "employment_year_price": 430000,
+          "employment_course_price": 1720000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 4,
+      "id": "b-ba-040",
+      "name": "Промышленный дизайн",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Дизайн",
+      "title": "Управление в креативных индустриях (ежегодные выездные модули в Дубай - 2 недели в год)",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 1000000,
+          "course_price": 4000000,
+          "employment_year_price": null,
+          "employment_course_price": null
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 4,
+      "id": "b-ba-041",
+      "name": "Управление в креативных индустриях (ежегодные выездные модули в Дубай - 2 недели в год)",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Дизайн",
+      "title": "Текстильный дизайн",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 390000,
+          "course_price": 1560000,
+          "employment_year_price": 430000,
+          "employment_course_price": 1720000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 4,
+      "id": "b-ba-042",
+      "name": "Текстильный дизайн",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Дизайн",
+      "title": "Дизайн костюма и аксессуаров",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 390000,
+          "course_price": 1560000,
+          "employment_year_price": 430000,
+          "employment_course_price": 1720000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 4,
+      "id": "b-ba-043",
+      "name": "Дизайн костюма и аксессуаров",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Дизайн",
+      "title": "Дизайн украшений и фурнитуры",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 390000,
+          "course_price": 1560000,
+          "employment_year_price": 430000,
+          "employment_course_price": 1720000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 4,
+      "id": "b-ba-044",
+      "name": "Дизайн украшений и фурнитуры",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Дизайн",
+      "title": "Художник анимации и компьютерной графики (совместно с Союзмультфильм)",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 550000,
+          "course_price": 2200000,
+          "employment_year_price": 590000,
+          "employment_course_price": 2360000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 4,
+      "id": "b-ba-045",
+      "name": "Художник анимации и компьютерной графики (совместно с Союзмультфильм)",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Дизайн",
+      "title": "Художник графических искусств (совместно с Bubble)",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 450000,
+          "course_price": 1800000,
+          "employment_year_price": 490000,
+          "employment_course_price": 1960000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 4,
+      "id": "b-ba-046",
+      "name": "Художник графических искусств (совместно с Bubble)",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Дизайн",
+      "title": "Нейроанимация и цифровое кино",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 530000,
+          "course_price": 2120000,
+          "employment_year_price": 570000,
+          "employment_course_price": 2280000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 4,
+      "id": "b-ba-047",
+      "name": "Нейроанимация и цифровое кино",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Дизайн",
+      "title": "Гейм-дизайн и дизайн игр",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 390000,
+          "course_price": 1560000,
+          "employment_year_price": 430000,
+          "employment_course_price": 1720000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 4,
+      "id": "b-ba-048",
+      "name": "Гейм-дизайн и дизайн игр",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Архитектура",
+      "title": "Архитектурное проектирование",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 390000,
+          "course_price": 1560000,
+          "employment_year_price": 430000,
+          "employment_course_price": 1720000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 4,
+      "id": "b-ba-049",
+      "name": "Архитектурное проектирование",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Градостроительство",
+      "title": "Градостроительство",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 390000,
+          "course_price": 1560000,
+          "employment_year_price": 430000,
+          "employment_course_price": 1720000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 4,
+      "id": "b-ba-050",
+      "name": "Градостроительство",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Строительство",
+      "title": "Строительство",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 390000,
+          "course_price": 1560000,
+          "employment_year_price": 430000,
+          "employment_course_price": 1720000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 4,
+      "id": "b-ba-051",
+      "name": "Строительство",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Ландшафтная архитектура",
+      "title": "Ландшафтная архитектура",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 390000,
+          "course_price": 1560000,
+          "employment_year_price": 430000,
+          "employment_course_price": 1720000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 4,
+      "id": "b-ba-052",
+      "name": "Ландшафтная архитектура",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Искусство костюма и текстиля",
+      "title": "Искусство костюма и текстиля",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 390000,
+          "course_price": 1560000,
+          "employment_year_price": 430000,
+          "employment_course_price": 1720000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 4,
+      "id": "b-ba-053",
+      "name": "Искусство костюма и текстиля",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Декоративно-прикладное искусство и народные промыслы",
+      "title": "Декоративно-прикладное искусство и народные промыслы",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 390000,
+          "course_price": 1560000,
+          "employment_year_price": 430000,
+          "employment_course_price": 1720000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 4,
+      "id": "b-ba-054",
+      "name": "Декоративно-прикладное искусство и народные промыслы",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Реклама и связи с общественностью",
+      "title": "Интернет-маркетинг",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 350000,
+          "course_price": 1400000,
+          "employment_year_price": 390000,
+          "employment_course_price": 1560000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 4,
+      "id": "b-ba-055",
+      "name": "Интернет-маркетинг",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Реклама и связи с общественностью",
+      "title": "Управление проектами в медиаиндустрии",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 350000,
+          "course_price": 1400000,
+          "employment_year_price": 390000,
+          "employment_course_price": 1560000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 4,
+      "id": "b-ba-056",
+      "name": "Управление проектами в медиаиндустрии",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Реклама и связи с общественностью",
+      "title": "Рекламный бизнес и продвижение цифрового продукта",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 350000,
+          "course_price": 1400000,
+          "employment_year_price": 390000,
+          "employment_course_price": 1560000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 4,
+      "id": "b-ba-057",
+      "name": "Рекламный бизнес и продвижение цифрового продукта",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Журналистика",
+      "title": "Международная журналистика (программа двойных дипломов с Сербией)",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 440000,
+          "course_price": 1760000,
+          "employment_year_price": null,
+          "employment_course_price": null
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 4,
+      "id": "b-ba-058",
+      "name": "Международная журналистика (программа двойных дипломов с Сербией)",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Психология",
+      "title": "Практическая психология",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 350000,
+          "course_price": 1400000,
+          "employment_year_price": 390000,
+          "employment_course_price": 1560000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 4,
+      "id": "b-ba-059",
+      "name": "Практическая психология",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Психолого-педагогическое образование",
+      "title": "Психология и социальная педагогика",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 350000,
+          "course_price": 1400000,
+          "employment_year_price": 390000,
+          "employment_course_price": 1560000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 4,
+      "id": "b-ba-060",
+      "name": "Психология и социальная педагогика",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Психолого-педагогическое образование",
+      "title": "Инклюзия в образовательной, социальной и профессиональной деятельности",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 350000,
+          "course_price": 1400000,
+          "employment_year_price": 390000,
+          "employment_course_price": 1560000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 4,
+      "id": "b-ba-061",
+      "name": "Инклюзия в образовательной, социальной и профессиональной деятельности",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Педагогическое образование",
+      "title": "Психология и педагогика начального образования",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 320000,
+          "course_price": 1280000,
+          "employment_year_price": 360000,
+          "employment_course_price": 1440000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 4,
+      "id": "b-ba-062",
+      "name": "Психология и педагогика начального образования",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Педагогическое образование",
+      "title": "Педагогический дизайн и управление образовательными проектами",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 320000,
+          "course_price": 1280000,
+          "employment_year_price": 360000,
+          "employment_course_price": 1440000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 4,
+      "id": "b-ba-063",
+      "name": "Педагогический дизайн и управление образовательными проектами",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Педагогическое образование",
+      "title": "Теория и практика перевода (английский и китайский языки)",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 320000,
+          "course_price": 1280000,
+          "employment_year_price": 360000,
+          "employment_course_price": 1440000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 4,
+      "id": "b-ba-064",
+      "name": "Теория и практика перевода (английский и китайский языки)",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Педагогическое образование",
+      "title": "Теория и практика перевода (английский и испанский языки)",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 320000,
+          "course_price": 1280000,
+          "employment_year_price": 360000,
+          "employment_course_price": 1440000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 4,
+      "id": "b-ba-065",
+      "name": "Теория и практика перевода (английский и испанский языки)",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Интеллектуальные системы в гуманитрной среде",
+      "title": "Интеллектуальные системы в нейролингвистике и конитивном переводоведении",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 320000,
+          "course_price": 1280000,
+          "employment_year_price": 360000,
+          "employment_course_price": 1440000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 4,
+      "id": "b-ba-066",
+      "name": "Интеллектуальные системы в нейролингвистике и конитивном переводоведении",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Лингвистика",
+      "title": "Теория и практика перевода",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 320000,
+          "course_price": 1280000,
+          "employment_year_price": 360000,
+          "employment_course_price": 1440000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 4,
+      "id": "b-ba-067",
+      "name": "Теория и практика перевода",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "История искусств",
+      "title": "Искусствоведение и арт-бизнес",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 350000,
+          "course_price": 1400000,
+          "employment_year_price": 390000,
+          "employment_course_price": 1560000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 4,
+      "id": "b-ba-068",
+      "name": "Искусствоведение и арт-бизнес",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "История искусств",
+      "title": "Арт-менеджмент",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 350000,
+          "course_price": 1400000,
+          "employment_year_price": 390000,
+          "employment_course_price": 1560000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 4,
+      "id": "b-ba-069",
+      "name": "Арт-менеджмент",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Мехатроника и робототехника",
+      "title": "Робототехнические и мехатронные системы автоматизации",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 390000,
+          "course_price": 1560000,
+          "employment_year_price": 430000,
+          "employment_course_price": 1720000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 4,
+      "id": "b-ba-070",
+      "name": "Робототехнические и мехатронные системы автоматизации",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Мехатроника и робототехника",
+      "title": "Роботизированные космические информационно- измерительные и телекоммуникационные системы",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 390000,
+          "course_price": 1560000,
+          "employment_year_price": 430000,
+          "employment_course_price": 1720000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 4,
+      "id": "b-ba-071",
+      "name": "Роботизированные космические информационно- измерительные и телекоммуникационные системы",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Мехатроника и робототехника",
+      "title": "Сервисные и промышленные мобильные робототехнические системы",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 390000,
+          "course_price": 1560000,
+          "employment_year_price": 430000,
+          "employment_course_price": 1720000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 4,
+      "id": "b-ba-072",
+      "name": "Сервисные и промышленные мобильные робототехнические системы",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Мехатроника и робототехника",
+      "title": "Эксплуатация и обслуживание беспилотных робототехнических авиационных систем",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 390000,
+          "course_price": 1560000,
+          "employment_year_price": 430000,
+          "employment_course_price": 1720000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 4,
+      "id": "b-ba-073",
+      "name": "Эксплуатация и обслуживание беспилотных робототехнических авиационных систем",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа вечернего обучения (ПВО)",
+      "study_format": "Очная форма",
+      "area": "Менеджмент",
+      "title": "Общий менеджмент",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 220000,
+          "course_price": 880000,
+          "employment_year_price": 260000,
+          "employment_course_price": 1040000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 5,
+      "id": "b-ba-074",
+      "name": "Общий менеджмент",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа вечернего обучения (ПВО)",
+      "study_format": "Очная форма",
+      "area": "Менеджмент",
+      "title": "Логистика",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 220000,
+          "course_price": 880000,
+          "employment_year_price": 260000,
+          "employment_course_price": 1040000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 5,
+      "id": "b-ba-075",
+      "name": "Логистика",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа вечернего обучения (ПВО)",
+      "study_format": "Очная форма",
+      "area": "Менеджмент",
+      "title": "Предпринимательство",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 270000,
+          "course_price": 1080000,
+          "employment_year_price": 310000,
+          "employment_course_price": 1240000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 5,
+      "id": "b-ba-076",
+      "name": "Предпринимательство",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа вечернего обучения (ПВО)",
+      "study_format": "Очная форма",
+      "area": "Менеджмент",
+      "title": "Спортивный менеджмент",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 220000,
+          "course_price": 880000,
+          "employment_year_price": 260000,
+          "employment_course_price": 1040000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 5,
+      "id": "b-ba-077",
+      "name": "Спортивный менеджмент",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа вечернего обучения (ПВО)",
+      "study_format": "Очная форма",
+      "area": "Менеджмент",
+      "title": "Предпринимательство (на английском языке)",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 320000,
+          "course_price": 1280000,
+          "employment_year_price": null,
+          "employment_course_price": null
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 5,
+      "id": "b-ba-078",
+      "name": "Предпринимательство (на английском языке)",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа вечернего обучения (ПВО)",
+      "study_format": "Очная форма",
+      "area": "Спорт",
+      "title": "Тренерская деятельность в спорте",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 220000,
+          "course_price": 880000,
+          "employment_year_price": 260000,
+          "employment_course_price": 1040000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 5,
+      "id": "b-ba-079",
+      "name": "Тренерская деятельность в спорте",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа вечернего обучения (ПВО)",
+      "study_format": "Очная форма",
+      "area": "Экономика",
+      "title": "Общий профиль",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 220000,
+          "course_price": 880000,
+          "employment_year_price": 260000,
+          "employment_course_price": 1040000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 5,
+      "id": "b-ba-080",
+      "name": "Общий профиль",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа вечернего обучения (ПВО)",
+      "study_format": "Очная форма",
+      "area": "Экономика",
+      "title": "Современный банковский бизнес",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 220000,
+          "course_price": 880000,
+          "employment_year_price": 260000,
+          "employment_course_price": 1040000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 5,
+      "id": "b-ba-081",
+      "name": "Современный банковский бизнес",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа вечернего обучения (ПВО)",
+      "study_format": "Очная форма",
+      "area": "Экономика",
+      "title": "Финансы и кредит",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 220000,
+          "course_price": 880000,
+          "employment_year_price": 260000,
+          "employment_course_price": 1040000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 5,
+      "id": "b-ba-082",
+      "name": "Финансы и кредит",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа вечернего обучения (ПВО)",
+      "study_format": "Очная форма",
+      "area": "Туризм",
+      "title": "Общий профиль",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 220000,
+          "course_price": 880000,
+          "employment_year_price": 260000,
+          "employment_course_price": 1040000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 5,
+      "id": "b-ba-083",
+      "name": "Общий профиль",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа вечернего обучения (ПВО)",
+      "study_format": "Очная форма",
+      "area": "Педагогическое образование",
+      "title": "Психология и педагогика начального образования",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 210000,
+          "course_price": 840000,
+          "employment_year_price": 250000,
+          "employment_course_price": 1000000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 5,
+      "id": "b-ba-084",
+      "name": "Психология и педагогика начального образования",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа вечернего обучения (ПВО)",
+      "study_format": "Очная форма",
+      "area": "Гостиничное дело",
+      "title": "Высшая школа отельеров, рестораторов и туроператоров",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 220000,
+          "course_price": 880000,
+          "employment_year_price": 260000,
+          "employment_course_price": 1040000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 5,
+      "id": "b-ba-085",
+      "name": "Высшая школа отельеров, рестораторов и туроператоров",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа вечернего обучения (ПВО)",
+      "study_format": "Очная форма",
+      "area": "Бизнес-информатика",
+      "title": "ИТ-менеджмент в бизнесе",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 250000,
+          "course_price": 1000000,
+          "employment_year_price": 290000,
+          "employment_course_price": 1160000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 5,
+      "id": "b-ba-086",
+      "name": "ИТ-менеджмент в бизнесе",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа вечернего обучения (ПВО)",
+      "study_format": "Очная форма",
+      "area": "Математическое обеспечение и администрирование информационных систем",
+      "title": "Разработка программного обеспечения (Full-stack разработка)",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 250000,
+          "course_price": 1000000,
+          "employment_year_price": 290000,
+          "employment_course_price": 1160000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 5,
+      "id": "b-ba-087",
+      "name": "Разработка программного обеспечения (Full-stack разработка)",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа вечернего обучения (ПВО)",
+      "study_format": "Очная форма",
+      "area": "ИСиТ",
+      "title": "Разработка, сопровождение и обеспечение безопасности информационных систем",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 250000,
+          "course_price": 1000000,
+          "employment_year_price": 290000,
+          "employment_course_price": 1160000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 5,
+      "id": "b-ba-088",
+      "name": "Разработка, сопровождение и обеспечение безопасности информационных систем",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа вечернего обучения (ПВО)",
+      "study_format": "Очная форма",
+      "area": "ИСиТ",
+      "title": "Общий профиль",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 250000,
+          "course_price": 1000000,
+          "employment_year_price": 290000,
+          "employment_course_price": 1160000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 5,
+      "id": "b-ba-089",
+      "name": "Общий профиль",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа вечернего обучения (ПВО)",
+      "study_format": "Очная форма",
+      "area": "ИСиТ",
+      "title": "Разработка компьютерных игр, дополненной и виртуальной реальности",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 250000,
+          "course_price": 1000000,
+          "employment_year_price": 290000,
+          "employment_course_price": 1160000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 5,
+      "id": "b-ba-090",
+      "name": "Разработка компьютерных игр, дополненной и виртуальной реальности",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа вечернего обучения (ПВО)",
+      "study_format": "Очная форма",
+      "area": "Информационная безопасность",
+      "title": "Безопасность компьютерных систем в сфере профессиональной деятельности",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 250000,
+          "course_price": 1000000,
+          "employment_year_price": 290000,
+          "employment_course_price": 1160000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 5,
+      "id": "b-ba-091",
+      "name": "Безопасность компьютерных систем в сфере профессиональной деятельности",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа вечернего обучения (ПВО)",
+      "study_format": "Очная форма",
+      "area": "Дизайн",
+      "title": "Графический дизайн и виртуальная дополненная реальность",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 250000,
+          "course_price": 1000000,
+          "employment_year_price": 290000,
+          "employment_course_price": 1160000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 5,
+      "id": "b-ba-092",
+      "name": "Графический дизайн и виртуальная дополненная реальность",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа вечернего обучения (ПВО)",
+      "study_format": "Очная форма",
+      "area": "Лингвистика",
+      "title": "Теория и практика перевода",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 210000,
+          "course_price": 840000,
+          "employment_year_price": 250000,
+          "employment_course_price": 1000000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 5,
+      "id": "b-ba-093",
+      "name": "Теория и практика перевода",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа вечернего обучения (ПВО)",
+      "study_format": "Очная форма",
+      "area": "Юриспруденция",
+      "title": "Гражданско-правовой профиль",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 220000,
+          "course_price": 880000,
+          "employment_year_price": 260000,
+          "employment_course_price": 1040000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 5,
+      "id": "b-ba-094",
+      "name": "Гражданско-правовой профиль",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа вечернего обучения (ПВО)",
+      "study_format": "Очная форма",
+      "area": "Юриспруденция",
+      "title": "Уголовно-правовой профиль",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 220000,
+          "course_price": 880000,
+          "employment_year_price": 260000,
+          "employment_course_price": 1040000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 5,
+      "id": "b-ba-095",
+      "name": "Уголовно-правовой профиль",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа вечернего обучения (ПВО)",
+      "study_format": "Очная форма",
+      "area": "Педагогическое образование",
+      "title": "Теория и практика перевода (английский и китайский языки)",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 210000,
+          "course_price": 840000,
+          "employment_year_price": 250000,
+          "employment_course_price": 1000000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 5,
+      "id": "b-ba-096",
+      "name": "Теория и практика перевода (английский и китайский языки)",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа вечернего обучения (ПВО)",
+      "study_format": "Очная форма",
+      "area": "Педагогическое образование",
+      "title": "Теория и практика перевода (английский и испанские языки)",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 210000,
+          "course_price": 840000,
+          "employment_year_price": 250000,
+          "employment_course_price": 1000000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 5,
+      "id": "b-ba-097",
+      "name": "Теория и практика перевода (английский и испанские языки)",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа вечернего обучения (ПВО)",
+      "study_format": "Очная форма",
+      "area": "Педагогическое образование",
+      "title": "Физическая культура",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 220000,
+          "course_price": 880000,
+          "employment_year_price": 260000,
+          "employment_course_price": 1040000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 5,
+      "id": "b-ba-098",
+      "name": "Физическая культура",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа вечеренего обучения (ПВО)",
+      "study_format": "Очно- заочная форма",
+      "area": "Экономика",
+      "title": "Финансы и кредит",
+      "prices": [
+        {
+          "months": 54,
+          "year_price": 170000,
+          "course_price": 765000,
+          "employment_year_price": 210000,
+          "employment_course_price": 945000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 5,
+      "id": "b-ba-099",
+      "name": "Финансы и кредит",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа вечеренего обучения (ПВО)",
+      "study_format": "Очно- заочная форма",
+      "area": "Государственное и муниципальное управление",
+      "title": "Государственная и муниципальная служба",
+      "prices": [
+        {
+          "months": 54,
+          "year_price": 220000,
+          "course_price": 990000,
+          "employment_year_price": 260000,
+          "employment_course_price": 1170000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 5,
+      "id": "b-ba-100",
+      "name": "Государственная и муниципальная служба",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа вечеренего обучения (ПВО)",
+      "study_format": "Очно- заочная форма",
+      "area": "Психолого-педагогическое образование",
+      "title": "Психология и социальная педагогика",
+      "prices": [
+        {
+          "months": 54,
+          "year_price": 170000,
+          "course_price": 765000,
+          "employment_year_price": 210000,
+          "employment_course_price": 945000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 5,
+      "id": "b-ba-101",
+      "name": "Психология и социальная педагогика",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа вечеренего обучения (ПВО)",
+      "study_format": "Очно- заочная форма",
+      "area": "Психология",
+      "title": "Практическая психология",
+      "prices": [
+        {
+          "months": 54,
+          "year_price": 170000,
+          "course_price": 765000,
+          "employment_year_price": 210000,
+          "employment_course_price": 945000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 5,
+      "id": "b-ba-102",
+      "name": "Практическая психология",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа выходного дня (ПВД)",
+      "study_format": "Очная форма",
+      "area": "Экономика",
+      "title": "Современный банковский бизнес",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 220000,
+          "course_price": 880000,
+          "employment_year_price": 260000,
+          "employment_course_price": 1040000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 5,
+      "id": "b-ba-103",
+      "name": "Современный банковский бизнес",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа выходного дня (ПВД)",
+      "study_format": "Очная форма",
+      "area": "Реклама и связи с общественностью",
+      "title": "Управление проектами в медиаиндустрии",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 220000,
+          "course_price": 880000,
+          "employment_year_price": 260000,
+          "employment_course_price": 1040000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 5,
+      "id": "b-ba-104",
+      "name": "Управление проектами в медиаиндустрии",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа выходного дня (ПВД)",
+      "study_format": "Очная форма",
+      "area": "Реклама и связи с общественностью",
+      "title": "Интернет-маркетинг",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 220000,
+          "course_price": 880000,
+          "employment_year_price": 260000,
+          "employment_course_price": 1040000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 5,
+      "id": "b-ba-105",
+      "name": "Интернет-маркетинг",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа выходного дня (ПВД)",
+      "study_format": "Очная форма",
+      "area": "Дизайн",
+      "title": "Графический дизайн и виртуальная дополненная реальность",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 250000,
+          "course_price": 1000000,
+          "employment_year_price": 290000,
+          "employment_course_price": 1160000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 5,
+      "id": "b-ba-106",
+      "name": "Графический дизайн и виртуальная дополненная реальность",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа выходного дня (ПВД)",
+      "study_format": "Очная форма",
+      "area": "Дизайн",
+      "title": "Дизайн среды и интерьера",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 250000,
+          "course_price": 1000000,
+          "employment_year_price": 290000,
+          "employment_course_price": 1160000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 5,
+      "id": "b-ba-107",
+      "name": "Дизайн среды и интерьера",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа выходного дня (ПВД)",
+      "study_format": "Очно- заочная форма",
+      "area": "Менеджмент",
+      "title": "Общий профиль",
+      "prices": [
+        {
+          "months": 54,
+          "year_price": 170000,
+          "course_price": 765000,
+          "employment_year_price": 210000,
+          "employment_course_price": 945000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 5,
+      "id": "b-ba-108",
+      "name": "Общий профиль",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа выходного дня (ПВД)",
+      "study_format": "Очно- заочная форма",
+      "area": "Информационные системы и технологии",
+      "title": "Разработка, сопровождение и обеспечение безопасности информационных систем",
+      "prices": [
+        {
+          "months": 54,
+          "year_price": 210000,
+          "course_price": 945000,
+          "employment_year_price": 250000,
+          "employment_course_price": 1125000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 5,
+      "id": "b-ba-109",
+      "name": "Разработка, сопровождение и обеспечение безопасности информационных систем",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа выходного дня (ПВД)",
+      "study_format": "Очно- заочная форма",
+      "area": "Юриспруденция",
+      "title": "Гражданско-правовой профиль",
+      "prices": [
+        {
+          "months": 54,
+          "year_price": 210000,
+          "course_price": 945000,
+          "employment_year_price": 250000,
+          "employment_course_price": 1125000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 5,
+      "id": "b-ba-110",
+      "name": "Гражданско-правовой профиль",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа выходного дня (ПВД)",
+      "study_format": "Очно- заочная форма",
+      "area": "Юриспруденция",
+      "title": "Уголовно-правовой профиль",
+      "prices": [
+        {
+          "months": 54,
+          "year_price": 210000,
+          "course_price": 945000,
+          "employment_year_price": 250000,
+          "employment_course_price": 1125000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 5,
+      "id": "b-ba-111",
+      "name": "Уголовно-правовой профиль",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа сокращенного классического обучения (СКО)",
+      "study_format": "Очная форма",
+      "area": "Международные отношения",
+      "title": "Международные отношения",
+      "prices": [
+        {
+          "months": 36,
+          "year_price": 350000,
+          "course_price": 1050000,
+          "employment_year_price": null,
+          "employment_course_price": null
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 5,
+      "id": "b-ba-112",
+      "name": "Международные отношения",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа сокращенного классического обучения (СКО)",
+      "study_format": "Очная форма",
+      "area": "Архитектура",
+      "title": "Архитектурное проектирование",
+      "prices": [
+        {
+          "months": 36,
+          "year_price": 350000,
+          "course_price": 1050000,
+          "employment_year_price": 390000,
+          "employment_course_price": 1170000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 5,
+      "id": "b-ba-113",
+      "name": "Архитектурное проектирование",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "Программа сокращенного классического обучения (СКО)",
+      "study_format": "Очная форма",
+      "area": "Торговое дело",
+      "title": "Международная конгрессно-выставовчная деятельность",
+      "prices": [
+        {
+          "months": 36,
+          "year_price": 350000,
+          "course_price": 1050000,
+          "employment_year_price": 390000,
+          "employment_course_price": 1170000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 5,
+      "id": "b-ba-114",
+      "name": "Международная конгрессно-выставовчная деятельность",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "СОВ",
+      "study_format": "Очная форма",
+      "area": "Дизайн",
+      "title": "Графический дизайн и виртуальная дополненная реальность",
+      "prices": [
+        {
+          "months": 30,
+          "year_price": 230000,
+          "course_price": 575000,
+          "employment_year_price": 270000,
+          "employment_course_price": 675000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 5,
+      "id": "b-ba-115",
+      "name": "Графический дизайн и виртуальная дополненная реальность",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "СОВ",
+      "study_format": "Очная форма",
+      "area": "Дизайн",
+      "title": "Дизайн среды и интерьера",
+      "prices": [
+        {
+          "months": 30,
+          "year_price": 230000,
+          "course_price": 575000,
+          "employment_year_price": 270000,
+          "employment_course_price": 675000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 5,
+      "id": "b-ba-116",
+      "name": "Дизайн среды и интерьера",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "СОВ",
+      "study_format": "Очная форма",
+      "area": "Дизайн",
+      "title": "Дизайн украшений и фурнитуры",
+      "prices": [
+        {
+          "months": 30,
+          "year_price": 230000,
+          "course_price": 575000,
+          "employment_year_price": 270000,
+          "employment_course_price": 675000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 5,
+      "id": "b-ba-117",
+      "name": "Дизайн украшений и фурнитуры",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "СОВ",
+      "study_format": "Очная форма",
+      "area": "Дизайн",
+      "title": "Дизайн костюма и аксессуаров",
+      "prices": [
+        {
+          "months": 30,
+          "year_price": 230000,
+          "course_price": 575000,
+          "employment_year_price": 270000,
+          "employment_course_price": 675000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 5,
+      "id": "b-ba-118",
+      "name": "Дизайн костюма и аксессуаров",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "СОВ",
+      "study_format": "Очная форма",
+      "area": "Дизайн",
+      "title": "Промышленный дизайн",
+      "prices": [
+        {
+          "months": 30,
+          "year_price": 230000,
+          "course_price": 575000,
+          "employment_year_price": 270000,
+          "employment_course_price": 675000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 5,
+      "id": "b-ba-119",
+      "name": "Промышленный дизайн",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "СОВ",
+      "study_format": "Очная форма",
+      "area": "Дизайн",
+      "title": "Текстильный дизайн",
+      "prices": [
+        {
+          "months": 30,
+          "year_price": 230000,
+          "course_price": 575000,
+          "employment_year_price": 270000,
+          "employment_course_price": 675000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 5,
+      "id": "b-ba-120",
+      "name": "Текстильный дизайн",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "СОВ",
+      "study_format": "Очная форма",
+      "area": "История искусствт",
+      "title": "Арт-менеджмент",
+      "prices": [
+        {
+          "months": 30,
+          "year_price": 230000,
+          "course_price": 575000,
+          "employment_year_price": 270000,
+          "employment_course_price": 675000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 5,
+      "id": "b-ba-121",
+      "name": "Арт-менеджмент",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "СОВ/СОД",
+      "study_format": "Очно- заочная форма",
+      "area": "Менеджмент",
+      "title": "Общий профиль",
+      "prices": [
+        {
+          "months": 30,
+          "year_price": 210000,
+          "course_price": 525000,
+          "employment_year_price": 250000,
+          "employment_course_price": 625000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 5,
+      "id": "b-ba-122",
+      "name": "Общий профиль",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "СОВ/СОД",
+      "study_format": "Очно- заочная форма",
+      "area": "Туризм",
+      "title": "Общий профиль",
+      "prices": [
+        {
+          "months": 30,
+          "year_price": 210000,
+          "course_price": 525000,
+          "employment_year_price": 250000,
+          "employment_course_price": 625000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 5,
+      "id": "b-ba-123",
+      "name": "Общий профиль",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "СОВ/СОД",
+      "study_format": "Очно- заочная форма",
+      "area": "Технологии продукции и организация общественного питания",
+      "title": "Общий профиль",
+      "prices": [
+        {
+          "months": 30,
+          "year_price": 210000,
+          "course_price": 525000,
+          "employment_year_price": 250000,
+          "employment_course_price": 625000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 5,
+      "id": "b-ba-124",
+      "name": "Общий профиль",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "СОВ/СОД",
+      "study_format": "Очно- заочная форма",
+      "area": "Гостиничное дело",
+      "title": "Высшая школа отельеров, рестораторов и туроператоров",
+      "prices": [
+        {
+          "months": 30,
+          "year_price": 210000,
+          "course_price": 525000,
+          "employment_year_price": 250000,
+          "employment_course_price": 625000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 5,
+      "id": "b-ba-125",
+      "name": "Высшая школа отельеров, рестораторов и туроператоров",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "СОВ/СОД",
+      "study_format": "Очно- заочная форма",
+      "area": "ИСиТ",
+      "title": "Разработка, сопровождение и обеспечение безопасности информационных системъ",
+      "prices": [
+        {
+          "months": 30,
+          "year_price": 210000,
+          "course_price": 525000,
+          "employment_year_price": 250000,
+          "employment_course_price": 625000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 5,
+      "id": "b-ba-126",
+      "name": "Разработка, сопровождение и обеспечение безопасности информационных системъ",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "СОВ/СОД",
+      "study_format": "Очно- заочная форма",
+      "area": "ИСиТ",
+      "title": "Разработка компьютерных игр, дополненной и виртуальной реальности",
+      "prices": [
+        {
+          "months": 30,
+          "year_price": 210000,
+          "course_price": 525000,
+          "employment_year_price": 250000,
+          "employment_course_price": 625000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 5,
+      "id": "b-ba-127",
+      "name": "Разработка компьютерных игр, дополненной и виртуальной реальности",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "СОВ/СОД",
+      "study_format": "Очно- заочная форма",
+      "area": "Прикладная информатика",
+      "title": "Прикладная информатика в экономике (совместная программа с 1С)",
+      "prices": [
+        {
+          "months": 30,
+          "year_price": 210000,
+          "course_price": 525000,
+          "employment_year_price": 250000,
+          "employment_course_price": 625000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 5,
+      "id": "b-ba-128",
+      "name": "Прикладная информатика в экономике (совместная программа с 1С)",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "СОВ/СОД",
+      "study_format": "Очно- заочная форма",
+      "area": "Бизнес-информатика",
+      "title": "ИТ-менеджмент в бизнесе",
+      "prices": [
+        {
+          "months": 30,
+          "year_price": 210000,
+          "course_price": 525000,
+          "employment_year_price": 250000,
+          "employment_course_price": 625000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 5,
+      "id": "b-ba-129",
+      "name": "ИТ-менеджмент в бизнесе",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "СОВ/СОД",
+      "study_format": "Очно- заочная форма",
+      "area": "Математическое обеспечение и администрирование информационных систем",
+      "title": "Разработка программного обеспечения (Full-stack разработка)",
+      "prices": [
+        {
+          "months": 30,
+          "year_price": 210000,
+          "course_price": 525000,
+          "employment_year_price": 250000,
+          "employment_course_price": 625000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 5,
+      "id": "b-ba-130",
+      "name": "Разработка программного обеспечения (Full-stack разработка)",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "СОВ/СОД",
+      "study_format": "Очно- заочная форма",
+      "area": "Информационная безопасность",
+      "title": "Безопасность компьютерных систем в сфере профессиональной деятельности",
+      "prices": [
+        {
+          "months": 30,
+          "year_price": 210000,
+          "course_price": 525000,
+          "employment_year_price": 250000,
+          "employment_course_price": 625000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 5,
+      "id": "b-ba-131",
+      "name": "Безопасность компьютерных систем в сфере профессиональной деятельности",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "СОВ/СОД",
+      "study_format": "Очно- заочная форма",
+      "area": "Юриспруденция",
+      "title": "Гражданско-правовой профиль",
+      "prices": [
+        {
+          "months": 30,
+          "year_price": 210000,
+          "course_price": 525000,
+          "employment_year_price": 250000,
+          "employment_course_price": 625000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 5,
+      "id": "b-ba-132",
+      "name": "Гражданско-правовой профиль",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "СОВ/СОД",
+      "study_format": "Очно- заочная форма",
+      "area": "Экономика",
+      "title": "Общий профиль",
+      "prices": [
+        {
+          "months": 30,
+          "year_price": 210000,
+          "course_price": 525000,
+          "employment_year_price": 250000,
+          "employment_course_price": 625000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 5,
+      "id": "b-ba-133",
+      "name": "Общий профиль",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "СОВ/СОД",
+      "study_format": "Очно- заочная форма",
+      "area": "Экономика",
+      "title": "Корпоративные финансы",
+      "prices": [
+        {
+          "months": 30,
+          "year_price": 170000,
+          "course_price": 425000,
+          "employment_year_price": 210000,
+          "employment_course_price": 525000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 5,
+      "id": "b-ba-134",
+      "name": "Корпоративные финансы",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "СОВ/СОД",
+      "study_format": "Очно- заочная форма",
+      "area": "Дизайн",
+      "title": "Цифровая анимация и визуальные эффекты",
+      "prices": [
+        {
+          "months": 30,
+          "year_price": 440000,
+          "course_price": 1100000,
+          "employment_year_price": 480000,
+          "employment_course_price": 1200000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 5,
+      "id": "b-ba-135",
+      "name": "Цифровая анимация и визуальные эффекты",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "СОВ/СОД",
+      "study_format": "Очно- заочная форма",
+      "area": "История искусств",
+      "title": "Арт-менеджмент",
+      "prices": [
+        {
+          "months": 30,
+          "year_price": 200000,
+          "course_price": 500000,
+          "employment_year_price": 240000,
+          "employment_course_price": 600000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "bachelor",
+      "source_page": 5,
+      "id": "b-ba-136",
+      "name": "Арт-менеджмент",
+      "source_order": "№ 173/3000255 от 04.09.2026"
+    },
+    {
+      "level": "specialist",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Радиоэлектронные системы и комплексы",
+      "title": "Наземные и космические радиоэлектронные системы передачи и обработки информации",
+      "prices": [
+        {
+          "months": 60,
+          "year_price": 420000,
+          "course_price": 2100000,
+          "employment_year_price": 460000,
+          "employment_course_price": 2300000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "specialist",
+      "source_page": 3,
+      "id": "s-sp-137",
+      "name": "Наземные и космические радиоэлектронные системы передачи и обработки информации",
+      "source_order": "№ 173/3000224 от 30.07.2026"
+    },
+    {
+      "level": "specialist",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Экономическая безопасность",
+      "title": "Экономист",
+      "prices": [
+        {
+          "months": 60,
+          "year_price": 350000,
+          "course_price": 1750000,
+          "employment_year_price": 390000,
+          "employment_course_price": 1950000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "specialist",
+      "source_page": 3,
+      "id": "s-sp-138",
+      "name": "Экономист",
+      "source_order": "№ 173/3000224 от 30.07.2026"
+    },
+    {
+      "level": "specialist",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Таможенное дело",
+      "title": "Таможенное дело",
+      "prices": [
+        {
+          "months": 60,
+          "year_price": 350000,
+          "course_price": 1750000,
+          "employment_year_price": 390000,
+          "employment_course_price": 1950000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "specialist",
+      "source_page": 3,
+      "id": "s-sp-139",
+      "name": "Таможенное дело",
+      "source_order": "№ 173/3000224 от 30.07.2026"
+    },
+    {
+      "level": "specialist",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Клиническая психология",
+      "title": "Клинический психолог",
+      "prices": [
+        {
+          "months": 66,
+          "year_price": 350000,
+          "course_price": 1925000,
+          "employment_year_price": 390000,
+          "employment_course_price": 2145000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "specialist",
+      "source_page": 3,
+      "id": "s-sp-140",
+      "name": "Клинический психолог",
+      "source_order": "№ 173/3000224 от 30.07.2026"
+    },
+    {
+      "level": "specialist",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Актерское искусство",
+      "title": "Артист эстрады",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 1000000,
+          "course_price": 4000000,
+          "employment_year_price": null,
+          "employment_course_price": null
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "specialist",
+      "source_page": 3,
+      "id": "s-sp-141",
+      "name": "Артист эстрады",
+      "source_order": "№ 173/3000224 от 30.07.2026"
+    },
+    {
+      "level": "specialist",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Актерское искусство",
+      "title": "Артист драматического театра и кино",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 520000,
+          "course_price": 2080000,
+          "employment_year_price": null,
+          "employment_course_price": null
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "specialist",
+      "source_page": 3,
+      "id": "s-sp-142",
+      "name": "Артист драматического театра и кино",
+      "source_order": "№ 173/3000224 от 30.07.2026"
+    },
+    {
+      "level": "specialist",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Кинооператорство",
+      "title": "Кинооператор",
+      "prices": [
+        {
+          "months": 60,
+          "year_price": 430000,
+          "course_price": 2150000,
+          "employment_year_price": 440000,
+          "employment_course_price": 2200000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "specialist",
+      "source_page": 3,
+      "id": "s-sp-143",
+      "name": "Кинооператор",
+      "source_order": "№ 173/3000224 от 30.07.2026"
+    },
+    {
+      "level": "specialist",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Продюсерство",
+      "title": "Продюсер кино и телевидения",
+      "prices": [
+        {
+          "months": 60,
+          "year_price": 430000,
+          "course_price": 2150000,
+          "employment_year_price": 480000,
+          "employment_course_price": 2400000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "specialist",
+      "source_page": 3,
+      "id": "s-sp-144",
+      "name": "Продюсер кино и телевидения",
+      "source_order": "№ 173/3000224 от 30.07.2026"
+    },
+    {
+      "level": "specialist",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Продюсерство",
+      "title": "Продюсер мультимедиа",
+      "prices": [
+        {
+          "months": 60,
+          "year_price": 360000,
+          "course_price": 1800000,
+          "employment_year_price": 400000,
+          "employment_course_price": 2000000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "specialist",
+      "source_page": 3,
+      "id": "s-sp-145",
+      "name": "Продюсер мультимедиа",
+      "source_order": "№ 173/3000224 от 30.07.2026"
+    },
+    {
+      "level": "specialist",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Продюсерство",
+      "title": "Продюсер мультимедиа(программа двойного диплома с Китаем - Communication University of Zhejiang)",
+      "prices": [
+        {
+          "months": 60,
+          "year_price": 550000,
+          "course_price": 2750000,
+          "employment_year_price": null,
+          "employment_course_price": null
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "specialist",
+      "source_page": 3,
+      "id": "s-sp-146",
+      "name": "Продюсер мультимедиа(программа двойного диплома с Китаем - Communication University of Zhejiang)",
+      "source_order": "№ 173/3000224 от 30.07.2026"
+    },
+    {
+      "level": "specialist",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Продюсерство",
+      "title": "Продюсер исполнительских искусств",
+      "prices": [
+        {
+          "months": 60,
+          "year_price": 1000000,
+          "course_price": 5000000,
+          "employment_year_price": null,
+          "employment_course_price": null
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "specialist",
+      "source_page": 3,
+      "id": "s-sp-147",
+      "name": "Продюсер исполнительских искусств",
+      "source_order": "№ 173/3000224 от 30.07.2026"
+    },
+    {
+      "level": "specialist",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Музыкальная звукорежиссура",
+      "title": "Музыкальный звукорежиссер",
+      "prices": [
+        {
+          "months": 60,
+          "year_price": 1000000,
+          "course_price": 5000000,
+          "employment_year_price": null,
+          "employment_course_price": null
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "specialist",
+      "source_page": 3,
+      "id": "s-sp-148",
+      "name": "Музыкальный звукорежиссер",
+      "source_order": "№ 173/3000224 от 30.07.2026"
+    },
+    {
+      "level": "specialist",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Правоохранительная деятельность",
+      "title": "Оперативно-розыскная деятельность",
+      "prices": [
+        {
+          "months": 60,
+          "year_price": 350000,
+          "course_price": 1750000,
+          "employment_year_price": 390000,
+          "employment_course_price": 1950000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "specialist",
+      "source_page": 3,
+      "id": "s-sp-149",
+      "name": "Оперативно-розыскная деятельность",
+      "source_order": "№ 173/3000224 от 30.07.2026"
+    },
+    {
+      "level": "specialist",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Судебная и прокурорская деятельность",
+      "title": "Судебная деятельность",
+      "prices": [
+        {
+          "months": 60,
+          "year_price": 350000,
+          "course_price": 1750000,
+          "employment_year_price": null,
+          "employment_course_price": null
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "specialist",
+      "source_page": 3,
+      "id": "s-sp-150",
+      "name": "Судебная деятельность",
+      "source_order": "№ 173/3000224 от 30.07.2026"
+    },
+    {
+      "level": "specialist",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Судебная и прокурорская деятельность",
+      "title": "Прокурорская деятельность",
+      "prices": [
+        {
+          "months": 60,
+          "year_price": 350000,
+          "course_price": 1750000,
+          "employment_year_price": null,
+          "employment_course_price": null
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "specialist",
+      "source_page": 3,
+      "id": "s-sp-151",
+      "name": "Прокурорская деятельность",
+      "source_order": "№ 173/3000224 от 30.07.2026"
+    },
+    {
+      "level": "specialist",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Лечебное дело",
+      "title": "Врач-лечебник",
+      "prices": [
+        {
+          "months": 72,
+          "year_price": 800000,
+          "course_price": 4800000,
+          "employment_year_price": null,
+          "employment_course_price": null
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "specialist",
+      "source_page": 3,
+      "id": "s-sp-152",
+      "name": "Врач-лечебник",
+      "source_order": "№ 173/3000224 от 30.07.2026"
+    },
+    {
+      "level": "specialist",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Лечебное дело",
+      "title": "Медицина будущего",
+      "prices": [
+        {
+          "months": 72,
+          "year_price": 1000000,
+          "course_price": 6000000,
+          "employment_year_price": null,
+          "employment_course_price": null
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "specialist",
+      "source_page": 3,
+      "id": "s-sp-153",
+      "name": "Медицина будущего",
+      "source_order": "№ 173/3000224 от 30.07.2026"
+    },
+    {
+      "level": "specialist",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "General Medicine",
+      "title": "Medical doctor",
+      "prices": [
+        {
+          "months": 60,
+          "year_price": 10000,
+          "course_price": 50000,
+          "employment_year_price": null,
+          "employment_course_price": null
+        }
+      ],
+      "currency": "USD",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "specialist",
+      "source_page": 3,
+      "id": "s-sp-154",
+      "name": "Medical doctor",
+      "source_order": "№ 173/3000224 от 30.07.2026"
+    },
+    {
+      "level": "specialist",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Dentistry",
+      "title": "Doctor - dentist",
+      "prices": [
+        {
+          "months": 60,
+          "year_price": 12000,
+          "course_price": 60000,
+          "employment_year_price": null,
+          "employment_course_price": null
+        }
+      ],
+      "currency": "USD",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "specialist",
+      "source_page": 3,
+      "id": "s-sp-155",
+      "name": "Doctor - dentist",
+      "source_order": "№ 173/3000224 от 30.07.2026"
+    },
+    {
+      "level": "specialist",
+      "training_mode": "Программа классического обучения (ПКО)",
+      "study_format": "Очная",
+      "area": "Стоматология",
+      "title": "Врач-стоматолог",
+      "prices": [
+        {
+          "months": 60,
+          "year_price": 850000,
+          "course_price": 4250000,
+          "employment_year_price": null,
+          "employment_course_price": null
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "specialist",
+      "source_page": 3,
+      "id": "s-sp-156",
+      "name": "Врач-стоматолог",
+      "source_order": "№ 173/3000224 от 30.07.2026"
+    },
+    {
+      "level": "specialist",
+      "training_mode": "Программа сокращенного классического обучения (СКО)",
+      "study_format": "Очная",
+      "area": "Лечебное дело",
+      "title": "Врач-лечебник",
+      "prices": [
+        {
+          "months": 66,
+          "year_price": 800000,
+          "course_price": 4400000,
+          "employment_year_price": null,
+          "employment_course_price": null
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "specialist",
+      "source_page": 3,
+      "id": "s-sp-157",
+      "name": "Врач-лечебник",
+      "source_order": "№ 173/3000224 от 30.07.2026"
+    },
+    {
+      "level": "specialist",
+      "training_mode": "Программа вечернего обучения (ПВО)",
+      "study_format": "Очно- заочная",
+      "area": "Продюсерство",
+      "title": "Продюсер кино и телевидения",
+      "prices": [
+        {
+          "months": 54,
+          "year_price": 220000,
+          "course_price": 990000,
+          "employment_year_price": 260000,
+          "employment_course_price": 1170000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "specialist",
+      "source_page": 3,
+      "id": "s-sp-158",
+      "name": "Продюсер кино и телевидения",
+      "source_order": "№ 173/3000224 от 30.07.2026"
+    },
+    {
+      "level": "specialist",
+      "training_mode": "СОВ/СОД",
+      "study_format": "Очно- заочная",
+      "area": "Продюсерство",
+      "title": "Продюсер кино и телевидения",
+      "prices": [
+        {
+          "months": 30,
+          "year_price": 230000,
+          "course_price": 575000,
+          "employment_year_price": 270000,
+          "employment_course_price": 675000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "specialist",
+      "source_page": 3,
+      "id": "s-sp-159",
+      "name": "Продюсер кино и телевидения",
+      "source_order": "№ 173/3000224 от 30.07.2026"
+    },
+    {
+      "level": "specialist",
+      "training_mode": "СОВ/СОД",
+      "study_format": "Очно- заочная",
+      "area": "Продюсерство",
+      "title": "Продюсер мультимедиа",
+      "prices": [
+        {
+          "months": 30,
+          "year_price": 230000,
+          "course_price": 575000,
+          "employment_year_price": 270000,
+          "employment_course_price": 675000
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "derived",
+      "generic": false,
+      "source": "specialist",
+      "source_page": 3,
+      "id": "s-sp-160",
+      "name": "Продюсер мультимедиа",
+      "source_order": "№ 173/3000224 от 30.07.2026"
+    },
+    {
+      "level": "college",
+      "training_mode": "С применением дистанционных технологий",
+      "study_format": "Очно-заочная (дистанционные технологии)",
+      "area": "Общий тариф без указания специальности",
+      "title": "Очно-заочная с применением дистанционных образовательных технологий",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 100000,
+          "course_price": 400000,
+          "employment_year_price": null,
+          "employment_course_price": null
+        },
+        {
+          "months": 60,
+          "year_price": 100000,
+          "course_price": 500000,
+          "employment_year_price": null,
+          "employment_course_price": null
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "explicit",
+      "generic": true,
+      "source": "distance",
+      "source_page": 3,
+      "id": "d-co-161",
+      "name": "Очно-заочная с применением дистанционных образовательных технологий",
+      "source_order": "№ 173/2001300 от 20.01.2026"
+    },
+    {
+      "level": "college",
+      "training_mode": "С применением дистанционных технологий",
+      "study_format": "Очно-заочная (дистанционные технологии)",
+      "area": "Общий тариф без указания специальности",
+      "title": "Очно-заочная с применением дистанционных образовательных технологий с поддержкой преподавателя",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 120000,
+          "course_price": 480000,
+          "employment_year_price": null,
+          "employment_course_price": null
+        },
+        {
+          "months": 60,
+          "year_price": 120000,
+          "course_price": 600000,
+          "employment_year_price": null,
+          "employment_course_price": null
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "explicit",
+      "generic": true,
+      "source": "distance",
+      "source_page": 3,
+      "id": "d-co-162",
+      "name": "Очно-заочная с применением дистанционных образовательных технологий с поддержкой преподавателя",
+      "source_order": "№ 173/2001300 от 20.01.2026"
+    },
+    {
+      "level": "college",
+      "training_mode": "С применением дистанционных технологий",
+      "study_format": "Очно-заочная (дистанционные технологии)",
+      "area": "факультет Комиксов",
+      "title": "факультет Комиксов",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 140000,
+          "course_price": 560000,
+          "employment_year_price": null,
+          "employment_course_price": null
+        },
+        {
+          "months": 60,
+          "year_price": 140000,
+          "course_price": 700000,
+          "employment_year_price": null,
+          "employment_course_price": null
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "explicit",
+      "generic": false,
+      "source": "distance",
+      "source_page": 3,
+      "id": "d-co-163",
+      "name": "факультет Комиксов",
+      "source_order": "№ 173/2001300 от 20.01.2026"
+    },
+    {
+      "level": "college",
+      "training_mode": "С применением дистанционных технологий",
+      "study_format": "Очно-заочная (дистанционные технологии)",
+      "area": "факультет Нейроанимации",
+      "title": "факультет Нейроанимации",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 180000,
+          "course_price": 720000,
+          "employment_year_price": null,
+          "employment_course_price": null
+        },
+        {
+          "months": 60,
+          "year_price": 180000,
+          "course_price": 900000,
+          "employment_year_price": null,
+          "employment_course_price": null
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "explicit",
+      "generic": false,
+      "source": "distance",
+      "source_page": 3,
+      "id": "d-co-164",
+      "name": "факультет Нейроанимации",
+      "source_order": "№ 173/2001300 от 20.01.2026"
+    },
+    {
+      "level": "college",
+      "training_mode": "С применением дистанционных технологий",
+      "study_format": "Очно-заочная (дистанционные технологии)",
+      "area": "факультет Анимации",
+      "title": "факультет Анимации",
+      "prices": [
+        {
+          "months": 48,
+          "year_price": 200000,
+          "course_price": 800000,
+          "employment_year_price": null,
+          "employment_course_price": null
+        },
+        {
+          "months": 60,
+          "year_price": 200000,
+          "course_price": 1000000,
+          "employment_year_price": null,
+          "employment_course_price": null
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "explicit",
+      "generic": false,
+      "source": "distance",
+      "source_page": 3,
+      "id": "d-co-165",
+      "name": "факультет Анимации",
+      "source_order": "№ 173/2001300 от 20.01.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "С применением дистанционных технологий",
+      "study_format": "Очно-заочная (дистанционные технологии)",
+      "area": "Общий тариф без указания специальности",
+      "title": "Очно-заочная с применением дистанционных образовательных технологий",
+      "prices": [
+        {
+          "months": 42,
+          "year_price": 100000,
+          "course_price": 350000,
+          "employment_year_price": null,
+          "employment_course_price": null
+        },
+        {
+          "months": 54,
+          "year_price": 100000,
+          "course_price": 450000,
+          "employment_year_price": null,
+          "employment_course_price": null
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "explicit",
+      "generic": true,
+      "source": "distance",
+      "source_page": 4,
+      "id": "d-ba-166",
+      "name": "Очно-заочная с применением дистанционных образовательных технологий",
+      "source_order": "№ 173/2001300 от 20.01.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "С применением дистанционных технологий",
+      "study_format": "Очно-заочная (дистанционные технологии)",
+      "area": "Общий тариф без указания специальности",
+      "title": "Очно-заочная с применением дистанционных образовательных технологий с поддержкой преподавателя",
+      "prices": [
+        {
+          "months": 42,
+          "year_price": 120000,
+          "course_price": 420000,
+          "employment_year_price": null,
+          "employment_course_price": null
+        },
+        {
+          "months": 54,
+          "year_price": 120000,
+          "course_price": 540000,
+          "employment_year_price": null,
+          "employment_course_price": null
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "explicit",
+      "generic": true,
+      "source": "distance",
+      "source_page": 4,
+      "id": "d-ba-167",
+      "name": "Очно-заочная с применением дистанционных образовательных технологий с поддержкой преподавателя",
+      "source_order": "№ 173/2001300 от 20.01.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "С применением дистанционных технологий",
+      "study_format": "Очно-заочная (дистанционные технологии)",
+      "area": "факультет Анимации",
+      "title": "факультет Анимации",
+      "prices": [
+        {
+          "months": 42,
+          "year_price": 200000,
+          "course_price": 700000,
+          "employment_year_price": null,
+          "employment_course_price": null
+        },
+        {
+          "months": 54,
+          "year_price": 200000,
+          "course_price": 900000,
+          "employment_year_price": null,
+          "employment_course_price": null
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "explicit",
+      "generic": false,
+      "source": "distance",
+      "source_page": 4,
+      "id": "d-ba-168",
+      "name": "факультет Анимации",
+      "source_order": "№ 173/2001300 от 20.01.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "С применением дистанционных технологий",
+      "study_format": "Очно-заочная (дистанционные технологии)",
+      "area": "факультет Комиксов",
+      "title": "факультет Комиксов",
+      "prices": [
+        {
+          "months": 42,
+          "year_price": 160000,
+          "course_price": 560000,
+          "employment_year_price": null,
+          "employment_course_price": null
+        },
+        {
+          "months": 54,
+          "year_price": 160000,
+          "course_price": 720000,
+          "employment_year_price": null,
+          "employment_course_price": null
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "explicit",
+      "generic": false,
+      "source": "distance",
+      "source_page": 4,
+      "id": "d-ba-169",
+      "name": "факультет Комиксов",
+      "source_order": "№ 173/2001300 от 20.01.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "С применением дистанционных технологий",
+      "study_format": "Очно-заочная (дистанционные технологии)",
+      "area": "факультет Нейроанимации (с вебинарами)",
+      "title": "факультет Нейроанимации (с вебинарами)",
+      "prices": [
+        {
+          "months": 42,
+          "year_price": 180000,
+          "course_price": 630000,
+          "employment_year_price": null,
+          "employment_course_price": null
+        },
+        {
+          "months": 54,
+          "year_price": 180000,
+          "course_price": 810000,
+          "employment_year_price": null,
+          "employment_course_price": null
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "explicit",
+      "generic": false,
+      "source": "distance",
+      "source_page": 4,
+      "id": "d-ba-170",
+      "name": "факультет Нейроанимации (с вебинарами)",
+      "source_order": "№ 173/2001300 от 20.01.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "С применением дистанционных технологий",
+      "study_format": "Очно-заочная (дистанционные технологии)",
+      "area": "Специальные дистанционные программы",
+      "title": "Менеджмент в музыкальной индустрии (без поддержки преподавателя)",
+      "prices": [
+        {
+          "months": 42,
+          "year_price": 120000,
+          "course_price": 420000,
+          "employment_year_price": null,
+          "employment_course_price": null
+        },
+        {
+          "months": 54,
+          "year_price": 120000,
+          "course_price": 540000,
+          "employment_year_price": null,
+          "employment_course_price": null
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "explicit",
+      "generic": false,
+      "source": "distance",
+      "source_page": 4,
+      "id": "d-ba-171",
+      "name": "Менеджмент в музыкальной индустрии (без поддержки преподавателя)",
+      "source_order": "№ 173/2001300 от 20.01.2026"
+    },
+    {
+      "level": "bachelor",
+      "training_mode": "С применением дистанционных технологий",
+      "study_format": "Очно-заочная (дистанционные технологии)",
+      "area": "Специальные дистанционные программы",
+      "title": "Программы двух дипломов с Ташкентским международным университетом",
+      "prices": [
+        {
+          "months": 42,
+          "year_price": 100000,
+          "course_price": 350000,
+          "employment_year_price": null,
+          "employment_course_price": null
+        },
+        {
+          "months": 54,
+          "year_price": 100000,
+          "course_price": 450000,
+          "employment_year_price": null,
+          "employment_course_price": null
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "explicit",
+      "generic": false,
+      "source": "distance",
+      "source_page": 4,
+      "id": "d-ba-172",
+      "name": "Программы двух дипломов с Ташкентским международным университетом",
+      "source_order": "№ 173/2001300 от 20.01.2026"
+    },
+    {
+      "level": "master",
+      "training_mode": "С применением дистанционных технологий",
+      "study_format": "Очно-заочная (дистанционные технологии)",
+      "area": "Общий тариф без указания специальности",
+      "title": "Очно-заочная с применением дистанционных образовательных технологий",
+      "prices": [
+        {
+          "months": 30,
+          "year_price": 100000,
+          "course_price": 250000,
+          "employment_year_price": null,
+          "employment_course_price": null
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "explicit",
+      "generic": true,
+      "source": "distance",
+      "source_page": 5,
+      "id": "d-ma-173",
+      "name": "Очно-заочная с применением дистанционных образовательных технологий",
+      "source_order": "№ 173/2001300 от 20.01.2026"
+    },
+    {
+      "level": "master",
+      "training_mode": "С применением дистанционных технологий",
+      "study_format": "Очно-заочная (дистанционные технологии)",
+      "area": "Общий тариф без указания специальности",
+      "title": "Очно-заочная с применением дистанционных образовательных технологий с поддержкой преподавателя",
+      "prices": [
+        {
+          "months": 30,
+          "year_price": 120000,
+          "course_price": 300000,
+          "employment_year_price": null,
+          "employment_course_price": null
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "explicit",
+      "generic": true,
+      "source": "distance",
+      "source_page": 5,
+      "id": "d-ma-174",
+      "name": "Очно-заочная с применением дистанционных образовательных технологий с поддержкой преподавателя",
+      "source_order": "№ 173/2001300 от 20.01.2026"
+    },
+    {
+      "level": "master",
+      "training_mode": "С применением дистанционных технологий",
+      "study_format": "Очно-заочная (дистанционные технологии)",
+      "area": "факультет Нейроанимации",
+      "title": "факультет Нейроанимации",
+      "prices": [
+        {
+          "months": 30,
+          "year_price": 360000,
+          "course_price": 900000,
+          "employment_year_price": null,
+          "employment_course_price": null
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "explicit",
+      "generic": false,
+      "source": "distance",
+      "source_page": 5,
+      "id": "d-ma-175",
+      "name": "факультет Нейроанимации",
+      "source_order": "№ 173/2001300 от 20.01.2026"
+    },
+    {
+      "level": "master",
+      "training_mode": "С применением дистанционных технологий",
+      "study_format": "Очно-заочная (дистанционные технологии)",
+      "area": "факультет Технологического предпринимательство",
+      "title": "факультет Технологического предпринимательство",
+      "prices": [
+        {
+          "months": 30,
+          "year_price": 115000,
+          "course_price": 287500,
+          "employment_year_price": null,
+          "employment_course_price": null
+        }
+      ],
+      "currency": "RUB",
+      "duration_source": "explicit",
+      "generic": false,
+      "source": "distance",
+      "source_page": 5,
+      "id": "d-ma-176",
+      "name": "факультет Технологического предпринимательство",
+      "source_order": "№ 173/2001300 от 20.01.2026"
+    }
   ]
 }
