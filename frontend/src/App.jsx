@@ -1,4 +1,5 @@
 import React, { useEffect, useMemo, useState } from 'react';
+import { facetsFor, modeName } from './catalogFilters.js';
 
 const LIMIT = 500000;
 const EXTRA_KEYS = ['housing', 'food', 'transport', 'other', 'materials'];
@@ -28,7 +29,6 @@ const presetForm = () => {
   }
   return result;
 };
-const modeLabel = mode => mode.replace('Программа ', '').replace(' (ПКО)', ' · ПКО').replace(' (ПВО)', ' · ПВО').replace(' (СКО)', ' · СКО');
 
 function Field({ label, id, options, value, onChange, className = '' }) {
   return <div className={`field ${className}`}>
@@ -87,17 +87,20 @@ export default function App() {
   const programs = catalog?.programs || [];
   const current = programs.find(p => p.id === programId);
   const level = current?.level || '';
-  const form = current?.study_format || '';
-  const mode = current?.training_mode || '';
   const area = current?.area || '';
   const levelItems = catalog?.levels || [];
-  const allOfLevel = programs.filter(p => p.level === level);
-  const formatItems = [...new Set(allOfLevel.map(p => p.study_format))];
-  const allOfFormat = allOfLevel.filter(p => p.study_format === form);
-  const modeItems = [...new Set(allOfFormat.map(p => p.training_mode))];
-  const allOfMode = allOfFormat.filter(p => p.training_mode === mode);
-  const areaItems = [...new Set(allOfMode.map(p => p.area))];
-  const allOfArea = allOfMode.filter(p => p.area === area);
+  // The official PDFs use both «Очная» and «Очная форма» for the same form.
+  // Select the study variant first so ПКО/ПВО/ПВД are always discoverable.
+  const facets = current ? facetsFor(programs, current) : null;
+  const mode = facets?.mode || '';
+  const form = facets?.format || '';
+  const allOfLevel = facets?.byLevel || [];
+  const modeItems = facets?.modes || [];
+  const allOfMode = facets?.byMode || [];
+  const formatItems = facets?.formats || [];
+  const allOfFormat = facets?.byFormat || [];
+  const areaItems = facets?.areas || [];
+  const allOfArea = facets?.byArea || [];
   const currentPrice = current?.prices.find(p => p.months === duration) || current?.prices[0];
   const unit = current?.currency || 'RUB';
   const canEmployment = Boolean(currentPrice?.employment_course_price);
@@ -174,9 +177,9 @@ export default function App() {
             <div className="sheet-head"><div className="number">01</div><div><h3>Стоимость обучения</h3><p>Выбор конкретной специальности, формата и срока</p></div></div>
             <div className="fields">
               <Field id="level" label="Уровень образования" value={level} onChange={v => selectProgram(programs.find(p => p.level === v))} options={levelItems.filter(x => x.count).map(x => ({value:x.id,label:x.name}))}/>
-              <Field id="study_format" label="Форма обучения" value={form} onChange={v => selectProgram(allOfLevel.find(p=>p.study_format===v))} options={formatItems.map(x=>({value:x,label:x}))}/>
-              <Field id="mode" label="Вариант обучения" className="full" value={mode} onChange={v => selectProgram(allOfFormat.find(p=>p.training_mode===v))} options={modeItems.map(x=>({value:x,label:modeLabel(x)}))}/>
-              <Field id="area" label={current.generic ? 'Категория тарифа' : 'Специальность / направление подготовки'} className="full" value={area} onChange={v => selectProgram(allOfMode.find(p=>p.area===v))} options={areaItems.map(x=>({value:x,label:x}))}/>
+              <Field id="mode" label="Вариант обучения" className="full" value={mode} onChange={v => selectProgram(allOfLevel.find(p=>facetsFor(programs, p).mode===v))} options={modeItems.map(x=>({value:x,label:modeName(x)}))}/>
+              <Field id="study_format" label="Форма обучения" value={form} onChange={v => selectProgram(allOfMode.find(p=>facetsFor(programs, p).format===v))} options={formatItems.map(x=>({value:x,label:x}))}/>
+              <Field id="area" label={current.generic ? 'Категория тарифа' : 'Специальность / направление подготовки'} className="full" value={area} onChange={v => selectProgram(allOfFormat.find(p=>p.area===v))} options={areaItems.map(x=>({value:x,label:x}))}/>
               <Field id="program" label={current.generic ? 'Опубликованный тариф' : 'Образовательная программа / профиль'} className="full" value={programId} onChange={v => selectProgram(programs.find(p=>p.id===v))} options={allOfArea.map(x=>({value:x.id,label:x.title}))}/>
               <Field id="duration" label="Срок обучения" value={String(months)} onChange={v => { setDuration(Number(v)); setEmployment(false); setQuote(null); }} options={current.prices.map(p=>({value:String(p.months),label:yearsLabel(p.months)}))}/>
               <div className="field"><label>Стоимость 2026 года (в год)</label><div className="readonly-price">{currency(yearToShow, unit)}</div></div>
